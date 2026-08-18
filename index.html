@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Read the Bible</title>
+<meta name="description" content="Small group hub for the BibleProject 'How to Read the Bible' series — video, podcast, and discussion guide for all 19 weeks.">
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  :root {
+    --bg: #EDEBE1;
+    --surface: #F8F6EE;
+    --surface-2: #E3DFCF;
+    --ink: #22242B;
+    --ink-soft: #52544D;
+    --ink-faint: #85837A;
+    --accent: #7A1F2B;
+    --accent-strong: #5A1720;
+    --accent-tint: #F1DBDD;
+    --rule: #D5D0BE;
+    --focus: #7A1F2B;
+
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+    --font-body: Charter, "Bitstream Charter", "Sitka Text", Georgia, "Times New Roman", serif;
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171C;
+      --surface: #1B1E24;
+      --surface-2: #23262D;
+      --ink: #ECE8DD;
+      --ink-soft: #B8B4A7;
+      --ink-faint: #86837A;
+      --accent: #E08B8F;
+      --accent-strong: #F0AEB1;
+      --accent-tint: #3A2226;
+      --rule: #34373F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15171C;
+    --surface: #1B1E24;
+    --surface-2: #23262D;
+    --ink: #ECE8DD;
+    --ink-soft: #B8B4A7;
+    --ink-faint: #86837A;
+    --accent: #E08B8F;
+    --accent-strong: #F0AEB1;
+    --accent-tint: #3A2226;
+    --rule: #34373F;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-strong); }
+  :focus-visible { outline: 2.5px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+  h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; font-weight: 600; }
+
+  .kicker {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin: 0 0 0.5em;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--rule);
+    padding: 3.2rem 1.5rem 2.4rem;
+  }
+  .masthead-inner { max-width: 760px; margin: 0 auto; }
+  .masthead .eyebrow {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.9em;
+  }
+  .masthead h1 { font-size: clamp(2rem, 5vw, 2.85rem); line-height: 1.08; }
+  .masthead .dek {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 1rem 0 0;
+  }
+  .masthead .note {
+    font-family: var(--font-ui);
+    font-size: 0.88rem;
+    color: var(--ink-faint);
+    max-width: 62ch;
+    margin: 1.1rem 0 0;
+    line-height: 1.55;
+  }
+  .masthead .note strong { color: var(--ink-soft); }
+
+  /* ---------- Index rail ---------- */
+  .index-nav {
+    max-width: 760px;
+    margin: 1.8rem auto 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-family: var(--font-ui);
+  }
+  .index-nav a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35em;
+    padding: 0.32em 0.7em;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.78rem;
+  }
+  .index-nav a:hover { border-color: var(--accent); color: var(--accent); }
+  .index-nav .n { font-variant-numeric: tabular-nums; color: var(--ink-faint); font-size: 0.72rem; }
+
+  .toolbar {
+    max-width: 760px;
+    margin: 1.4rem auto 0;
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+  }
+  .toolbar button {
+    font: inherit;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    padding: 0;
+  }
+  .toolbar button:hover { color: var(--accent); }
+
+  /* ---------- Entries ---------- */
+  main { max-width: 760px; margin: 0 auto; padding: 0.5rem 1.5rem 4rem; }
+
+  .entry {
+    padding: 2.6rem 0;
+    border-bottom: 1px solid var(--rule);
+    scroll-margin-top: 1.2rem;
+  }
+  .entry:last-child { border-bottom: none; }
+
+  .entry-head h2 { font-size: 1.55rem; margin-bottom: 0.55rem; }
+  .entry-head .blurb { color: var(--ink-soft); font-size: 1rem; line-height: 1.65; max-width: 66ch; }
+
+  .resources {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.8rem;
+    align-items: center;
+    font-family: var(--font-ui);
+  }
+  .res-video {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    background: var(--accent);
+    color: var(--surface);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .res-video:hover { background: var(--accent-strong); color: var(--surface); }
+  .res-video::before { content: "▶"; font-size: 0.7em; }
+
+  .res-podcast { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+  .res-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-right: 0.15em;
+  }
+  .pod-link {
+    font-size: 0.8rem;
+    padding: 0.38em 0.75em;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--ink-soft);
+    background: var(--surface);
+  }
+  .pod-link:hover { border-color: var(--accent); color: var(--accent); }
+  .pod-fallback { font-size: 0.85rem; color: var(--ink-faint); }
+  .pod-fallback a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 3px; }
+
+  .res-pdf {
+    font-size: 0.8rem;
+    padding: 0.38em 0.75em;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--ink-soft);
+    background: var(--surface);
+  }
+  .res-pdf:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- Discussion guide disclosure ---------- */
+  details.guide { margin-top: 1.4rem; }
+  details.guide summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-ui);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    padding: 0.7em 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  details.guide summary::-webkit-details-marker { display: none; }
+  details.guide summary::before {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    background: var(--surface-2);
+    color: var(--accent);
+    font-size: 0.9em;
+    flex: none;
+  }
+  details.guide[open] summary::before { content: "–"; }
+  details.guide summary .count { color: var(--ink-faint); font-weight: 400; }
+
+  .guide-body { padding: 0.4rem 0 0.2rem; }
+  .guide-body ol { margin: 0; padding-left: 1.4em; }
+  .guide-body li {
+    margin: 0 0 1.05em;
+    padding-left: 0.3em;
+    line-height: 1.68;
+    font-size: 0.99rem;
+  }
+  .guide-body li::marker {
+    font-family: var(--font-ui);
+    color: var(--ink-faint);
+    font-size: 0.85em;
+  }
+  .ref {
+    background: var(--accent-tint);
+    color: var(--accent-strong);
+    padding: 0.05em 0.4em;
+    border-radius: 4px;
+    font-weight: 600;
+    font-style: normal;
+    white-space: nowrap;
+  }
+
+  .back-up { display: inline-block; margin-top: 1.6rem; font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-faint); text-decoration: none; }
+  .back-up:hover { color: var(--accent); }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    line-height: 1.6;
+  }
+  footer a { color: var(--ink-soft); }
+
+  /* ---------- Print ---------- */
+  @media print {
+    .masthead { background: none; border: none; padding: 0 0 1rem; }
+    .index-nav, .toolbar, .res-video, .pod-link, .pod-fallback, .res-pdf, .back-up { display: none !important; }
+    details.guide summary { border-top: none; padding: 0; }
+    details.guide summary::before { display: none; }
+    .guide-body, .guide-body ol, .guide-body li { display: block !important; }
+    .entry { break-inside: avoid-page; page-break-inside: avoid; border-bottom: none; padding: 1.2rem 0; }
+    .ref { background: none; padding: 0; }
+    body { color: #000; background: #fff; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead" id="top">
+  <div class="masthead-inner">
+    <p class="eyebrow">Small Group Study &middot; 19 Weeks</p>
+    <h1>How to Read the Bible</h1>
+    <p class="dek">Everything for our weekly study lives on this one page — the BibleProject video, related podcast listening, and the full discussion guide for each week. Bookmark this link; it's the only one you need.</p>
+    <p class="note"><strong>How this works:</strong> tap a week below to jump to it, or just scroll. Each entry opens with the video and podcast links, then a "Discussion guide" section you can expand to read or print the questions. Where a podcast episode matches the week's topic closely, it's linked directly — a few weeks link to the general podcast series instead, since BibleProject's conversations don't always map one-to-one to the videos.</p>
+  </div>
+  <ul class="index-nav">
+    <li><a href="#week-1"><span class="n">01</span> What Is the Bible?</a></li>
+    <li><a href="#week-2"><span class="n">02</span> The Story of the Bible</a></li>
+    <li><a href="#week-3"><span class="n">03</span> Literary Styles</a></li>
+    <li><a href="#week-4"><span class="n">04</span> Meditation Literature</a></li>
+    <li><a href="#week-5"><span class="n">05</span> Plot</a></li>
+    <li><a href="#week-6"><span class="n">06</span> Character</a></li>
+    <li><a href="#week-7"><span class="n">07</span> Setting</a></li>
+    <li><a href="#week-8"><span class="n">08</span> Design Patterns</a></li>
+    <li><a href="#week-9"><span class="n">09</span> The Gospel</a></li>
+    <li><a href="#week-10"><span class="n">10</span> Parables</a></li>
+    <li><a href="#week-11"><span class="n">11</span> Biblical Poetry</a></li>
+    <li><a href="#week-12"><span class="n">12</span> Poetic Metaphor</a></li>
+    <li><a href="#week-13"><span class="n">13</span> Book of Psalms</a></li>
+    <li><a href="#week-14"><span class="n">14</span> The Prophets</a></li>
+    <li><a href="#week-15"><span class="n">15</span> Books of Solomon</a></li>
+    <li><a href="#week-16"><span class="n">16</span> Apocalyptic Lit.</a></li>
+    <li><a href="#week-17"><span class="n">17</span> Biblical Law</a></li>
+    <li><a href="#week-18"><span class="n">18</span> NT Letters: History</a></li>
+    <li><a href="#week-19"><span class="n">19</span> NT Letters: Craft</a></li>
+  </ul>
+  <div class="toolbar">
+    <button type="button" id="expand-all">Expand all guides</button>
+    <button type="button" id="collapse-all">Collapse all</button>
+  </div>
+</div>
+
+<main>
+
+  <section class="entry" id="week-1">
+    <div class="entry-head">
+      <p class="kicker">Orientation &middot; Week 1 of 19</p>
+      <h2>What Is the Bible?</h2>
+      <p class="blurb">The Bible isn't one book but a small library — 39 Old Testament books (the Hebrew TaNaK: Torah, Prophets, Writings) written in Hebrew and Aramaic over more than 1,000 years, and 27 New Testament books written in Greek within a few decades of Jesus by his early followers. Different Christian traditions include a few additional books beyond this core, but all agree the story centers on Jesus.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/what-is-bible/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2001%20-%20What%20Is%20the%20Bible.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/bible-divine-literary-art/" target="_blank" rel="noopener">The Bible as Divine Literary Art</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/what-is-your-bible/" target="_blank" rel="noopener">What's in Your Bible?</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>When you hear the word "Bible," what comes to mind first — a single book, a rulebook, a library, a story? Where do you think that picture came from?</li>
+          <li><strong class="ref">Read 2 Timothy 3:15-17.</strong> What does Paul call Scripture, and what does he say it's useful for? His word for "God-breathed" is the Greek <em>theopneustos</em> — what does it mean for something written by human authors, shaped by their own time and place, to also be described this way?</li>
+          <li>The Old and New Testaments were written by dozens of authors across more than a thousand years, in different languages, under very different circumstances. Why do you think God chose to reveal himself this way, rather than through one text handed down all at once?</li>
+          <li><strong class="ref">Read Hebrews 4:12.</strong> What does this verse say God's word actually does? The author calls it "living and active" rather than just "true and reliable" — is that how you typically experience the Bible when you open it, or does it feel more like a historical document or a moral rulebook? What would need to change for "living and active" to be your honest, default expectation?</li>
+          <li><strong class="ref">Read Luke 24:13-27.</strong> What does Jesus do for the two disciples on the road, and where does he start explaining himself from, according to verse 27? What does that tell you about how Jesus himself understood and read the Old Testament?</li>
+          <li>The Bible mixes narrative, poetry, law, letters, and wisdom writing. How do you think these different kinds of writing work together to tell one story, instead of just being a grab-bag of unrelated material?</li>
+          <li>Christian traditions (Protestant, Catholic, Orthodox) don't all agree on the exact list of books in the Bible. Does that surprise or unsettle you? Does it change how much confidence you place in Scripture — why or why not?</li>
+          <li>BibleProject argues the Bible tells one continuous story that leads to Jesus. Does that story continue today, in the church and in your own life? If so, how do you see yourself as part of it?</li>
+          <li>What's one assumption about the Bible — how it was written, what it's for, how it should be read — that you're willing to have challenged over these 19 weeks? As you start this study, what's one thing you're hoping to walk away with?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-2">
+    <div class="entry-head">
+      <p class="kicker">Orientation &middot; Week 2 of 19</p>
+      <h2>The Story of the Bible</h2>
+      <p class="blurb">The Bible reads like a library, but it's actually one continuous story with a plot that moves from creation to new creation. It opens with God shaping a good world and inviting humans to rule it well, and it closes with God and humanity dwelling together in a renewed creation. In between, the story tracks humanity's repeated failure to trust God's definition of good and evil, God's choice to work through one family — Israel — to bless the whole world, and finally Jesus, who fulfills Israel's calling and throws the story open to everyone.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/the-story-of-the-bible/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2002%20-%20The%20Story%20of%20the%20Bible.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/what-story-bible/" target="_blank" rel="noopener">What Is the Story of the Bible?</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(10 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Think about the stories you grew up with — fairy tales, family stories, the "story" your country tells about itself. What made those stories powerful or sticky? Do you tend to think of the Bible more like that kind of shaping story, or more like a reference book you consult for answers?</li>
+          <li><strong class="ref">Read Genesis 1:27-28.</strong> What does God tell the man and woman to do right after he creates them? What do you think it means to be made "in God's image," and how does that shape what you think humans are actually for?</li>
+          <li><strong class="ref">Read Genesis 3:6-7.</strong> What does the woman see in the fruit that makes her want it, and what do she and Adam actually do — and what happens to them right afterward? Why do you think the temptation to define good and evil on our own terms, rather than trusting God's, is still so tempting for us today?</li>
+          <li><strong class="ref">Read Genesis 3:15.</strong> What exactly does God say will happen between the serpent and the offspring of the woman? Why do you think God announces this hope so early, long before anyone could see how it would be fulfilled?</li>
+          <li><strong class="ref">Read Genesis 12:2-3.</strong> What exactly does God promise Abraham in these verses? Why start small — one couple, one family — instead of fixing everything for the whole world all at once?</li>
+          <li><strong class="ref">Read Mark 1:14-15.</strong> What exactly does Jesus announce, and what two things does he call people to do in response? Given everything Israel had been waiting for, why is this such a loaded, pivotal announcement?</li>
+          <li><strong class="ref">Read Matthew 28:5-6.</strong> What does the angel actually tell the women at the tomb? What do you make of the claim that Jesus' resurrection didn't just reverse one death, but broke the power of evil and death themselves?</li>
+          <li><strong class="ref">Read Romans 3:21-26.</strong> What does Paul say this righteousness from God is based on, and who does he say it's available to? How does this connect back to God's original promise to Abraham that all nations would be blessed through him?</li>
+          <li><strong class="ref">Read Revelation 21:1-4.</strong> What does this passage say God will do, and what does it say will be gone for good? How does knowing where the story ends change the way you live in the middle of it, right now?</li>
+          <li>Looking at the whole arc — creation, rebellion, Israel, Jesus, new creation — which part of that story feels closest to the season you're in right now? What would it look like to live like someone who already knows how the story ends?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-3">
+    <div class="entry-head">
+      <p class="kicker">Orientation &middot; Week 3 of 19</p>
+      <h2>Literary Styles in the Bible</h2>
+      <p class="blurb">The Bible isn't written in one uniform style — it's a blend of narrative (nearly half the text), poetry (roughly a third), and prose discourse like letters, speeches, and law (about a quarter). Each style does something different: narrative pulls you into a story to think through conflict and resolution, poetry uses dense, imaginative language to stir your emotions and imagination, and discourse builds a logical argument meant to persuade you toward action. Learning to notice which kind of writing you're in changes how much you actually get out of any given page.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/literary-styles-bible/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2003%20-%20Literary%20Styles%20in%20the%20Bible.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/how-read-bible-part-3-intro-literary-genres-and-stories-we-tell-ourselves/" target="_blank" rel="noopener">Literary Genres and the Stories We Tell Ourselves</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/how-read-bible-part-4-poetry-narrative-and-prose-discourse-genres/" target="_blank" rel="noopener">Poetry, Narrative, and Prose Discourse</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(10 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>When you picture "the Bible" in your mind, do you picture more story, more poetry, or more of a rulebook or instruction manual? Where do you think that impression came from?</li>
+          <li>Narrative makes up nearly half of the Bible. Why do you think God chose to reveal so much of himself through story, rather than through straightforward teaching or a list of rules?</li>
+          <li><strong class="ref">Read Jonah 1.</strong> This chapter is narrative — a character (Jonah), a setting (a ship fleeing to Tarshish), and a mounting conflict (the storm). What's the actual conflict in this chapter, and is it the one you'd expect from a story about a "reluctant prophet"?</li>
+          <li>Jonah is running from God's call to preach to Nineveh, a city Israel hated. By the end of the chapter, the pagan sailors on the ship end up looking more godly than Jonah does. What do you think the author wants us to notice by setting up that contrast?</li>
+          <li><strong class="ref">Read Jonah 2.</strong> What does Jonah actually say in this prayer — what does he acknowledge about what's happened to him, and what does he vow to do? Jonah's prayer from inside the fish shifts from narrative into poetry, which works differently — it's meant to be felt and imagined, not just informed. What images or phrases stand out to you here, and how do they land differently than if this moment had just been described in plain narration?</li>
+          <li>Jonah is about to storm off in anger at God again just one chapter later. Does his prayer in chapter 2 sound to you like genuine repentance, or something else? What do you make of that tension?</li>
+          <li><strong class="ref">Read Romans 8.</strong> What does Paul say is now true for those who are in Christ Jesus, and what does he list that can't separate us from the love of God? This is prose discourse — Paul building a connected, logical argument (notice words like "therefore," "because," "so that"). What is Paul actually trying to persuade his readers to believe or do in this chapter?</li>
+          <li>Discourse like Romans 8 is built to engage your reasoning; poetry like Jonah's prayer is built to engage your imagination and emotions. Which style do you personally connect with more easily when you read Scripture, and which one do you tend to skim past?</li>
+          <li>The same Bible contains a fish-swallows-a-prophet story and a dense theological argument about no condemnation and nothing separating us from God's love. How do you think these very different kinds of writing work together, rather than feeling like a mismatched grab bag?</li>
+          <li>If you started paying closer attention to what kind of writing you're reading — story, poem, or argument — what do you think would change about how you read Scripture, or what you'd expect to get out of it?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-4">
+    <div class="entry-head">
+      <p class="kicker">Narrative &middot; Week 4 of 19</p>
+      <h2>The Bible as Jewish Meditation Literature</h2>
+      <p class="blurb">Ancient Hebrew narrative works differently than most of the storytelling we're used to today. Where modern stories spell out what characters look like, why they act the way they do, and how we're supposed to feel about it, biblical authors frequently leave those details out on purpose. These gaps are invitations to slow down, sit with the ambiguity, and return to the same story again and again over a lifetime. The Bible itself describes this kind of slow, repeated engagement as "meditation."</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/bible-jewish-meditation-literature-h2r/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2004%20-%20The%20Bible%20as%20Jewish%20Meditation%20Literature.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/how-read-bible-part-5-why-isnt-there-more-detail-bible-stories/" target="_blank" rel="noopener">Why Isn't There More Detail in Bible Stories?</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/how-read-bible-part-6-jewish-scripture-meditation-vs-modern-meditation/" target="_blank" rel="noopener">The Bible as Jewish Meditation Literature</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Think of a book, film, or song you've come back to more than once and noticed something new each time. What was it, and what did repeated encounters bring out that you missed the first time around?</li>
+          <li>Biblical narrative often leaves out details modern readers expect — what people looked like, why they made the choices they made. Does that surprise you? Have you ever felt frustrated reading a Bible story because information seemed to be missing?</li>
+          <li>Take the story of Cain and Abel as an example: we're never told why God accepted Abel's offering but not Cain's. That gap seems intentional — it puts the reader in the same uncertainty Cain felt. Why might a storyteller want you to feel confused on purpose?</li>
+          <li>When an author leaves ambiguity in a story, different readers can honestly land on different interpretations of it. What's the risk in that kind of open-ended storytelling, and what's the potential reward?</li>
+          <li><strong class="ref">Read Psalm 1.</strong> What does Psalm 1 say the "blessed" person avoids, and what does he do instead? What would it actually look like to build a habit of delighting in and meditating on Scripture "day and night" into an ordinary week?</li>
+          <li>The Hebrew word translated "meditate" in Psalm 1 is used elsewhere to describe a bear growling low over its prey, or a dove cooing — a quiet, absorbed sound, not an empty, silent mind. How is that picture different from what you'd typically picture when you hear the word "meditation"?</li>
+          <li>Psalm 1 compares this kind of person to "a tree planted by streams of water," steadily bearing fruit. Why do you think patient, repeated engagement with Scripture gets compared to a slow-growing tree instead of something quicker, like a sudden flash of insight?</li>
+          <li>If success in reading the Bible isn't about extracting a tidy takeaway every single time, but about learning to sit with ambiguity and let a passage shape you over years, how does that change what a good "quiet time" or devotional habit might actually look like?</li>
+          <li>What's one story or passage you've read many times but never really slowed down to sit with? What would it look like to "meditate" on it, in the Psalm 1 sense, sometime this week?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-5">
+    <div class="entry-head">
+      <p class="kicker">Narrative &middot; Week 5 of 19</p>
+      <h2>Plot in Biblical Narrative</h2>
+      <p class="blurb">Nearly half of the Bible is written as narrative, and narrative works by arranging characters and events into a plot — a conflict that builds toward a climax and finds resolution. Biblical stories almost always work on multiple layers at once: a small scene fits inside a larger story, which fits inside a bigger movement, which fits inside the single sweeping storyline of the whole Bible. Reading a scene in isolation, without asking how it fits into that larger plot, can completely flip its meaning.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/plot-biblical-narrative/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2005%20-%20Plot%20in%20Biblical%20Narrative.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/how-read-bible-part-7-understanding-plot-and-narrative-bible-stories/" target="_blank" rel="noopener">Plot in Biblical Narrative</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Have you ever badly misread a movie or book because you only caught one scene out of context — like walking into a film halfway through? What happened once you finally saw the whole thing?</li>
+          <li><strong class="ref">Read Judges 6.</strong> What is Gideon doing when the angel first finds him, and what does he ask God for before he'll act on what he's been told? What does this opening chapter reveal about Gideon's character, even before any fighting starts?</li>
+          <li>The famous "fleece" scene is often taught as a model for how to discern God's will. But read in context, it looks more like Gideon repeatedly testing God out of fear rather than acting in faith. Does knowing the larger story change how you'd apply this scene to your own life?</li>
+          <li><strong class="ref">Read Judges 7.</strong> What two rounds of cuts does God make to Gideon's army, and how does he decide who stays each time? Given what we already know about Gideon's hesitance, why do you think God insisted on doing this?</li>
+          <li>The battle is won with trumpets, torches, and clay jars instead of weapons or superior numbers. What point do you think the author is making about where real power actually comes from?</li>
+          <li><strong class="ref">Read Judges 8.</strong> What does Gideon say when Israel offers to make him king, and what does he do right afterward with the gold earrings they give him? How does this ending complicate a simple "hero wins the day" reading of Gideon's story?</li>
+          <li>Some readers describe biblical plots as following either a "comedy" arc (a character overcomes challenges and rises) or a "tragedy" arc (a character has everything going for them but self-destructs). Looking at the whole span of Judges 6-8, which arc do you think best fits Gideon, and why?</li>
+          <li>This one story about Gideon sits inside the larger book of Judges, which itself sits inside the larger story of Israel repeatedly failing and needing rescue. How does seeing Gideon as one piece of that bigger, repeating pattern change what you think the story is actually about?</li>
+          <li>Think of a familiar Bible story you've mostly encountered in bite-sized pieces — a sermon point, a devotional, a kids' Bible version. What might change if you read the whole surrounding narrative in one sitting instead?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-6">
+    <div class="entry-head">
+      <p class="kicker">Narrative &middot; Week 6 of 19</p>
+      <h2>Character in Biblical Narrative</h2>
+      <p class="blurb">Biblical authors build characters very differently than a modern novel or movie would. Instead of describing what someone looks like or explaining their inner thoughts, the Bible tends to reveal character through a handful of carefully chosen details — a name, a physical trait, an action, a line of dialogue — and then steps back and lets you decide what to make of it. That's a strategic choice, not a lack of skill: the author is trusting you to do some of the work yourself.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/character-biblical-narrative/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2006%20-%20Character%20in%20Biblical%20Narrative.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/characters-bible/" target="_blank" rel="noopener">Character in Biblical Narrative</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Think of a character from a movie or show you love who isn't simply "good" or "bad" — someone morally complicated, hard to pin down. What keeps you interested in them?</li>
+          <li><strong class="ref">Read 1 Samuel 9:1-2.</strong> What details does the text give us about Saul when he's introduced — his family background, his appearance? Why do you think the narrator chose to tell us this detail about him instead of simply saying he'd make a good king or a bad one?</li>
+          <li><strong class="ref">Read Genesis 12:10-20.</strong> What does Abraham ask Sarah to tell the Egyptians, and why does he ask her to do it? The narrator never says whether this was right or wrong — he just tells us what happened and what it led to. What does it do to you as a reader when the Bible refuses to hand you a verdict on a character like this?</li>
+          <li><strong class="ref">Read Genesis 32:28.</strong> What new name is Jacob given here, and what reason does the text give for it? What does it tell you that God renames a lifelong deceiver "one who struggles with God," rather than something like "one who has arrived"?</li>
+          <li><strong class="ref">Read Daniel 6.</strong> What do Daniel's enemies admit they can't find against him, and what's the one thing they're able to use? How does a character like Daniel function differently in a story than someone like Abraham or Jacob?</li>
+          <li>Biblical characters are almost always a mixed bag — capable of real faith and real failure, sometimes in the very same chapter. Why do you think the biblical authors were so committed to portraying people this way instead of giving us clear heroes and villains?</li>
+          <li>God is the one character who shows up on the very first page of the Bible and is still present on the last page. What difference does it make that the Bible's real "main character," in that sense, isn't any human being but God himself?</li>
+          <li>Which biblical character's flaws or failures do you find yourself most relating to right now, and why?</li>
+          <li>Given everything we've talked about tonight, how might you read Bible stories differently this week — paying more attention to what's shown through a character's choices than what's simply told to you about them?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-7">
+    <div class="entry-head">
+      <p class="kicker">Narrative &middot; Week 7 of 19</p>
+      <h2>Setting in Biblical Narrative</h2>
+      <p class="blurb">In storytelling, the place and time where a scene happens isn't just backdrop — it carries meaning and sets expectations, the same way a courtroom or a haunted house immediately cues us in on what kind of story we're about to watch. Biblical authors use setting the same way: certain places and time periods, like "the east" or the number forty, pick up meaning across the whole Bible, so that every time they show up again, they arrive loaded with memory and anticipation.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/setting-biblical-narrative/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2007%20-%20Setting%20in%20Biblical%20Narrative.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/understanding-settings-bible/" target="_blank" rel="noopener">Setting in Biblical Narrative</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Think of a movie or show where the setting alone told you what kind of story you were about to watch — a dark old house, a courtroom, a small town. What settings instantly set your expectations like that?</li>
+          <li><strong class="ref">Read Genesis 3:23-24.</strong> Where does God send Adam and Eve after banishing them from the garden? Keep this direction in mind as we look at a few more passages.</li>
+          <li><strong class="ref">Read Genesis 4:16.</strong> Where does Cain end up after murdering his brother?</li>
+          <li><strong class="ref">Read Genesis 11:1-2.</strong> The builders of Babel migrate "east" to build their city and tower. What do you notice about this repeated direction? What picture is the Bible building in your mind by sending person after person "east"?</li>
+          <li><strong class="ref">Read Genesis 7:12.</strong> How long does the text say Noah and his family endure the rain? What do you think forty has come to represent, and why might the biblical authors keep returning to it?</li>
+          <li>When Jesus' family flees to Egypt to escape Herod in Matthew's Gospel, Egypt — usually the place of slavery and danger in the Old Testament — suddenly becomes the place of safety instead. Why might an author deliberately reverse our expectations about a setting like this?</li>
+          <li>Knowing that biblical writers use place and time this intentionally, how might it change the way you read familiar stories going forward — do you find yourself starting to ask "where is this happening, and what else happened here before?"</li>
+          <li>Is there a "setting" in your own life right now — a season, a place, a kind of waiting — that feels like your own wilderness or your own "forty days"? What do you think might be going on in that timing?</li>
+          <li>As we close, what's one place or time-marker in Scripture that you now want to pay closer attention to the next time you come across it?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-8">
+    <div class="entry-head">
+      <p class="kicker">Narrative &middot; Week 8 of 19</p>
+      <h2>Design Patterns in Biblical Narrative</h2>
+      <p class="blurb">Biblical authors weave individual stories together into one larger story using deliberate patterns — repeated words, repeated scenes, and repeated sequences of action that echo across hundreds of years and dozens of different characters. Once you start noticing these patterns, you realize that stories placed far apart in the Bible are actually in conversation with one another, and that they're all building toward Jesus.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/design-patterns-biblical-narrative/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2008%20-%20Design%20Patterns%20in%20Biblical%20Narrative.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/design-patterns-bible-live-milpitas-part-1/" target="_blank" rel="noopener">Live from Milpitas, Pt. 1</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/design-patterns-bible-live-milpitas-part-2/" target="_blank" rel="noopener">Live from Milpitas, Pt. 2</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/design-patterns-bible-part-3-crossing-chaotic-waters/" target="_blank" rel="noopener">Crossing the Chaotic Waters</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/design-patterns-bible-part-4-chaotic-waters-baptism/" target="_blank" rel="noopener">Chaotic Waters and Baptism</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Have you ever noticed a movie or show deliberately echo an earlier scene — the same shot, the same line, the same choice — to make a point by comparison? What did that repetition make you think or feel?</li>
+          <li><strong class="ref">Read Genesis 3:6-7.</strong> What three things does the text say Eve does, in order, before she eats the fruit? Keep that sequence in mind as we look at a few more stories.</li>
+          <li><strong class="ref">Read Genesis 16:1-6.</strong> Sarai gives Hagar to Abram, and the same basic pattern of desiring and taking something outside of God's promise plays out again. What's different about the players here, and what's exactly the same?</li>
+          <li><strong class="ref">Read Exodus 32:1-22.</strong> What do the Israelites ask Aaron to make for them, and what does he do with the gold they bring him? What kind of consequences does one person's — or one community's — moment of temptation end up creating for everyone around them?</li>
+          <li><strong class="ref">Read 2 Samuel 11:1-5.</strong> What does David see from his roof, and what does he do about it? By this point, this pattern should feel familiar. Why do you think the biblical authors wanted you to recognize it here too?</li>
+          <li>This same "see, desire, take" pattern shows up with Adam and Eve, Abraham and Sarai, Aaron and Israel, and David — completely different characters spread across a huge span of time. What does this pattern suggest about the biblical authors' view of human nature?</li>
+          <li>The Gospels tell us that when Jesus faced his own moment of temptation in the garden of Gethsemane, he prayed "not my desire, but yours be done" — flipping the pattern for the first time in the whole story. Why does it matter that this reversal happens through suffering and surrender rather than through Jesus simply getting what he wanted?</li>
+          <li>Where do you see this "see it, want it, take it" pattern playing out in your own life or in the temptations you regularly face?</li>
+          <li>Knowing how intentionally these patterns were woven across so many different books and centuries, how does that shape your confidence in the Bible as one coordinated story rather than a loose collection of unrelated books?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-9">
+    <div class="entry-head">
+      <p class="kicker">Gospel &middot; Week 9 of 19</p>
+      <h2>The Gospel</h2>
+      <p class="blurb">The word "gospel" means "good news," and in the New Testament it specifically means the announcement that God's kingdom has arrived in our world through the life, death, and resurrection of Jesus. Matthew, Mark, Luke, and John each tell this same essential story, but each author arranges and highlights different details to bring out a different facet of who Jesus is.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/how-to-read-gospel/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2009%20-%20The%20Gospel.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/what-does-word-gospel-mean/" target="_blank" rel="noopener">What Does the Word "Gospel" Mean?</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/gospel-more-you-think/" target="_blank" rel="noopener">The Gospel Is More Than You Think</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/why-are-there-4-gospels/" target="_blank" rel="noopener">Why Are There Four Accounts of the Gospel?</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/obvious-extravagant-claim-gospels-gospels-e4/" target="_blank" rel="noopener">The Extravagant Claim of the Gospel</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>What's a piece of genuinely good news you've received in your life that changed how you saw everything else going on around you at the time?</li>
+          <li><strong class="ref">Read John 20:31.</strong> According to this verse, why does John say he wrote these things down? What does it mean to you that the Gospel writers weren't just trying to record history, but were trying to persuade you to actually trust and follow Jesus?</li>
+          <li><strong class="ref">Read Luke 2:1-21.</strong> Who is the news of Jesus' birth announced to first, and how does the angel describe it? Why do you think this news is first delivered to shepherds rather than to religious or political leaders?</li>
+          <li><strong class="ref">Read Matthew 4:23-24.</strong> What three things does this passage say Jesus is doing as he goes through Galilee? What does this description tell you about what the "kingdom of God" actually looks like when it shows up?</li>
+          <li><strong class="ref">Read Mark 15:21-47.</strong> Who's present at the cross in this passage, and what does the centurion say when Jesus dies? Why do you think the Gospel writers treat the crucifixion, of all things, as the climax of the entire story?</li>
+          <li><strong class="ref">Read Mark 16:1-8.</strong> What do the women find when they arrive at the tomb, and how does the text say they respond? Why might Mark choose to end his Gospel on a note of alarm, trembling, and silence instead of a more confident, victorious one?</li>
+          <li>Matthew presents Jesus as a greater Moses, Mark as the unexpected and mysterious Messiah, Luke as the one who brings God's light to all nations, and John as God himself become human. Which of these four portraits of Jesus do you find yourself most drawn to, and why?</li>
+          <li>The Gospel writers rarely tell you outright how to feel about Jesus — instead they show you how other people in the story respond to him and let you make up your own mind. Where have you seen your own response to Jesus mirrored in one of the characters we read about this week?</li>
+          <li>As you think about the whole message of the gospel — that God's kingdom has broken into the world through Jesus — what's one part of your own life where you need to let that news actually change something this week?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-10">
+    <div class="entry-head">
+      <p class="kicker">Gospel &middot; Week 10 of 19</p>
+      <h2>Parables</h2>
+      <p class="blurb">Jesus was a master storyteller, and many of his most famous teachings come to us as short, vivid stories called parables. They aren't simple moral fables meant to illustrate a lesson — they're how Jesus announced that God's kingdom was breaking into the world, often in ways that confused, provoked, or upended his listeners' expectations. Reading a parable well means asking who's listening, what assumption is being challenged, and what decision the story is pushing you toward.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/how-to-read-the-bible-the-parables-of-jesus/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2010%20-%20Parables.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <span class="pod-fallback">No single matching episode found — <a href="https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/" target="_blank" rel="noopener">browse the podcast series</a> for related conversations.</span>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Think of a time someone made a point to you through a story instead of just telling you directly — a parent, a friend, a movie. Why do you think they told a story instead of just saying it plainly? Did it land differently?</li>
+          <li><strong class="ref">Read Luke 10:25-37.</strong> In the story itself, who passes by the wounded man without stopping, and who actually helps him (vv. 31-33)? Look closely at who's asking Jesus the question, and why (v. 25, 29). What is Jesus actually confronting by making a despised Samaritan the hero and the respected religious leaders the ones who fail?</li>
+          <li>Jesus' parables often refuse to hand listeners a tidy moral — instead they leave the audience to draw their own conclusion, the way Nathan's story about a stolen lamb forced King David to convict himself before he realized the story was about him. Why might indirect, unfinished stories change people more effectively than direct instructions or lectures?</li>
+          <li><strong class="ref">Read Matthew 18:25-35.</strong> What does the master do for the first servant (v. 27), and what does that same servant then do to a fellow servant who owes him money (vv. 28-30)? Where do you see this same pattern show up in your own life or relationships — having received grace, but being slow to extend it to someone else?</li>
+          <li>Many of Jesus' parables feature an authority figure (a king, master, father, or landowner) alongside two very different responses from those under him. Why do you think Jesus kept returning to this setup when he talked about God's kingdom?</li>
+          <li><strong class="ref">Read Luke 15.</strong> What does each owner do the moment the lost thing is found — the shepherd with his sheep, the woman with her coin, the father with his son (vv. 5-6, 9, 20-24)? Which of the three images feels closest to your own story of being sought out or welcomed back? Why?</li>
+          <li>In the parable of the two sons, the father runs to embrace the younger son before he can finish his rehearsed apology, and then goes out a second time to plead with the resentful older brother standing outside the party. What does this suggest about how God pursues both the obviously lost and the quietly resentful?</li>
+          <li>Jesus deliberately taught in a way that revealed truth to those willing to wrestle with it while leaving it puzzling to those who weren't. Why might God prefer that kind of teaching over simply stating things as clearly and directly as possible?</li>
+          <li>Of the three passages we read tonight, which parable feels like it's aimed most directly at you this season — the story of the Samaritan, the unforgiving servant, or the lost sheep, coin, and son? What's one thing you sense it's inviting you to reconsider or change?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-11">
+    <div class="entry-head">
+      <p class="kicker">Poetry &middot; Week 11 of 19</p>
+      <h2>The Art of Biblical Poetry</h2>
+      <p class="blurb">Roughly a third of the Bible is poetry, and it works differently than narrative. Instead of moving a plot forward, biblical poetry slows down and lingers, inviting readers into an experience rather than just handing over information. Its basic building block is the couplet — two short lines placed side by side, where the second line completes, deepens, or contrasts the first — which is part of why poetry became the primary way the Hebrew prophets recorded God's own speech.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/art-biblical-poetry/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2011%20-%20The%20Art%20of%20Biblical%20Poetry.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/series-h2r-p17-poetry-e1-thunder-god/" target="_blank" rel="noopener">The Thunder of God</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/series-h2r-p18-poetry-e2-god-speaks-poetry/" target="_blank" rel="noopener">God Speaks in Poetry</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Do you gravitate toward poetry, or does it usually go over your head? Is there a song lyric, quote, or line of poetry that has stuck with you over the years? What makes it memorable?</li>
+          <li><strong class="ref">Read Exodus 15:1-21.</strong> What images does this song use to describe what God did to Pharaoh's army and to the sea itself (vv. 4-10)? This song celebrates the exact same event told in narrative form just one chapter earlier. Why do you think the Bible gives us both a plain account and a poetic song? What does the song let you feel that a simple retelling wouldn't?</li>
+          <li>Notice the intense, repeated imagery in the Song of the Sea — God's "right hand," the waters "piled up" like a wall, the sea "congealing." Poetry like this doesn't just report an event, it tries to recreate the experience of it. What's it like to read this as a participant rather than a bystander?</li>
+          <li><strong class="ref">Read Psalm 51.</strong> Try reading verses 1-3 slowly, out loud if you can. Notice how the second line of each pair sharpens the first — "blot out my transgressions" sharpens "be gracious to me." What does slowing down like this change about how the confession lands, compared to skimming it once?</li>
+          <li>David uses several different images for sin and forgiveness in this psalm — stains that need washing, guilt that stands "ever before" him, a clean heart that needs to be created new. Why do you think one image wasn't enough for him? Which of these pictures feels most true to your own experience?</li>
+          <li><strong class="ref">Read Isaiah 11:1-5.</strong> What happens once the Spirit rests on this coming king, and what qualities does the passage say will mark him (vv. 2-5)? He's pictured as a "shoot" springing from the "stump" and "roots" of Jesse — David's father, not David himself. What do you think this odd image of new growth from old roots is trying to say about the kind of deliverer Israel actually needed?</li>
+          <li>Poetry is terse by design — it says more by using fewer, more carefully chosen words. Why might God have chosen to reveal so much of who he is, and so much of what he asks of us, through compressed poetry instead of straightforward prose?</li>
+          <li>If a third of the Bible is written to be slowed down and savored rather than read quickly for information, how does that change the way you typically approach your Bible reading, if at all?</li>
+          <li>Pick one line from Exodus 15, Psalm 51, or Isaiah 11 that stood out to you tonight. What would it look like to actually sit with that single line this week instead of moving on to the next chapter?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-12">
+    <div class="entry-head">
+      <p class="kicker">Poetry &middot; Week 12 of 19</p>
+      <h2>Poetic Metaphor</h2>
+      <p class="blurb">Metaphor isn't just decoration in language — it's the basic way humans make sense of the world. Biblical poets draw from a shared set of images rooted in Israel's story: chaotic, stormy waters as danger and death; dry land and gardens as safety and life; wild animals as threat; marriage as the picture of covenant faithfulness. Because these images get reused across books written centuries apart, one picture can carry an entire web of meaning that stretches from Genesis all the way to Revelation.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/metaphor-biblical-poetry/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2012%20-%20Poetic%20Metaphor.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/series-h2r-p19-metaphor-e1-metaphor-our-imagination/" target="_blank" rel="noopener">Metaphor and Our Imagination</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/series-h2r-p20-metaphor-e2-mountain-garden-human-ideal/" target="_blank" rel="noopener">The Mountain Garden and the Human Ideal</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/series-h2r-p21-metaphor-e3-chaotic-waters/" target="_blank" rel="noopener">Chaotic Waters</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>What's a metaphor or turn of phrase you use often without really thinking about it — "I'm drowning in work," "that doesn't hold water," "she lit up the room"? Where do you think it originally came from?</li>
+          <li><strong class="ref">Read Isaiah 17:12-14.</strong> What happens to these roaring, rumbling nations by the end of the passage (vv. 13-14)? When have you felt like you were being swept under by "roaring waters" — whether that was circumstances, anxiety, or conflict in your life?</li>
+          <li><strong class="ref">Read Joel 2:1-3.</strong> What does the text say this coming army looks like, and what does it say the land looks like before and after it passes through (vv. 2-3)? Why might picturing a crisis as the undoing of Eden hit differently than a plain description of an approaching army?</li>
+          <li><strong class="ref">Read Hosea 2:18-19.</strong> What two things does God promise in these verses, and what words does he use to describe his relationship with his people (vv. 18-19)? Why do you think safety from danger and marital faithfulness are pictured together here as one single vision of peace (shalom)?</li>
+          <li><strong class="ref">Read Psalm 92:11-15.</strong> What does the psalm say the righteous will still be doing, even in old age (vv. 13-14)? What does picturing spiritual health as something slow-growing and deeply rooted, rather than instant, suggest about how you think about your own growth?</li>
+          <li><strong class="ref">Read Revelation 21:1-3.</strong> What does John see and hear in this vision, and what does the voice from the throne announce (vv. 1-3)? How do these two threads we've traced tonight, chaotic water and marriage, come together in this final picture of restoration?</li>
+          <li>These same images — stormy seas as danger, gardens as safety, wild animals as threat or peace, marriage as faithfulness — show up again and again in books written hundreds of years apart. What does that kind of consistency tell you about how unified the Bible's imagination really is?</li>
+          <li>A good metaphor reveals some things about its subject and conceals others — no image is a perfect one-to-one description. Does it bother you, or comfort you, that so much of what Scripture says about God comes to us through metaphor rather than flat, literal statement?</li>
+          <li>Which image from tonight — raging water, an invaded garden, a wild animal at peace, a flourishing tree, or a bride prepared for her wedding — best captures where you feel you are with God right now? Why that one?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-13">
+    <div class="entry-head">
+      <p class="kicker">Poetry &middot; Week 13 of 19</p>
+      <h2>The Book of Psalms</h2>
+      <p class="blurb">The book of Psalms is the largest collection of poetry in the Bible, but it isn't a random anthology — it was carefully arranged to be read from beginning to end, retelling the whole biblical story in poetic form. It opens with poems about God's instruction and God's coming king, works through centuries of lament tied to David's story and Israel's exile, and closes with an unrestrained five-poem burst of praise — functioning as a kind of portable temple people could carry with them wherever they were.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/book-of-psalms/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2013%20-%20The%20Book%20of%20Psalms.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <span class="pod-fallback">No single matching episode found — <a href="https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/" target="_blank" rel="noopener">browse the podcast series</a> for related conversations.</span>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(10 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>What's your go-to way of processing hard emotions — journaling, talking it out, going quiet, something else? Where does prayer typically fit into that for you, if at all?</li>
+          <li><strong class="ref">Read Psalm 1.</strong> What does the psalm say the righteous person does and doesn't do (vv. 1-2), and what happens to each of the two ways of life by the end (vv. 4-6)? What would it practically look like for you to "delight in" Scripture, as this psalm puts it, rather than treat it as an obligation to check off?</li>
+          <li><strong class="ref">Read Psalm 2.</strong> What are the nations doing at the start of this psalm, and how does God respond (vv. 1-6)? Where do you see this same kind of defiance — human power resisting God's rule — playing out in the world today?</li>
+          <li>Psalms 1 and 2 were placed together on purpose to introduce the entire book — one centered on God's instruction, the other on God's coming king. Why might it matter that every reader encounters both of these themes before anything else in the book?</li>
+          <li><strong class="ref">Read Psalm 13.</strong> What are the four "how long" questions David asks at the start, and what shift happens by the end of the psalm (vv. 1-2, 5-6)? Why do you think it matters that raw complaint gets this much room in Scripture, instead of being rushed past for something more "positive"?</li>
+          <li><strong class="ref">Read Psalm 23.</strong> What images does David use for God in this psalm, and what does he say God does for him along the way (vv. 1-3, 5)? Set its calm, settled confidence against Psalm 13's desperation from a moment ago. What does it tell you that both an anguished psalm and a peaceful one sit in the same book as equally valid ways of talking to God?</li>
+          <li>In Psalm 23, David pictures God as a shepherd who leads him <em>through</em> "the valley of the shadow of death" rather than around it. Has there been a season where you felt God leading you through hardship rather than sparing you from it? What was that like?</li>
+          <li><strong class="ref">Read Psalm 150.</strong> What reasons and what instruments does this psalm list for praising God (vv. 1-5)? Why do you think the book ends on pure praise rather than resolving every lament that came before it?</li>
+          <li>The Psalms range from desperate complaint to quiet confidence to unrestrained joy, sometimes within just a few pages of each other. What does it tell you about God that Scripture makes room for such a wide range of honest prayer?</li>
+          <li>If you had to write your own psalm this week — either a Psalm 13 or a Psalm 150 — which one would honestly reflect where you are with God right now? What's one line you'd want to say to him?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-14">
+    <div class="entry-head">
+      <p class="kicker">Prophecy &middot; Week 14 of 19</p>
+      <h2>The Prophets</h2>
+      <p class="blurb">The Old Testament prophets are often remembered as fortune-tellers, but that's not really what a "prophet" means in the Bible. A prophet was God's messenger — someone who had a radical encounter with God's presence and was then sent to speak on his behalf, mostly to call Israel back to faithfulness in the covenant relationship. Most of what fills these fifteen books isn't prediction at all — it's blunt accusation of injustice, urgent calls to repent, and some of the most hope-filled poetry in the whole Bible sitting right alongside the harshest warnings.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/the-prophets/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2014%20-%20The%20Prophets.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/what-prophecy/" target="_blank" rel="noopener">What Prophecy Is For</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/prophets-provokers/" target="_blank" rel="noopener">Prophets as Provokers</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>When you hear the word "prophet," what comes to mind first — a fortune-teller, a doomsday preacher, someone brave enough to say what nobody wants to hear? Where do you think that picture came from?</li>
+          <li>The prophets have been described as "covenant lawyers" — representing God's side of his relationship with Israel, accusing them when they break faith and calling them back when they stray. Does that change how you think about what a "prophetic voice" is supposed to do, then or now?</li>
+          <li><strong class="ref">Read Isaiah 1:10-20.</strong> What does God say he wants instead of Israel's sacrifices, offerings, and festivals? What does it tell you that God cared more about "seeking justice" and "defending the oppressed" than about correct religious performance?</li>
+          <li>In that same passage, God says, "Though your sins are like scarlet, they shall be as white as snow" — mercy offered in the very same breath as the accusation. What does it tell you about God's character that confrontation and forgiveness show up together like that?</li>
+          <li><strong class="ref">Read Hosea 13.</strong> What images does God use to describe himself in this chapter, and what does he say Israel has forgotten? Why do you think God's anger might actually be evidence of love rather than the opposite of it?</li>
+          <li>Prophetic books tend to follow a pattern: accusation, a call to repent, and then an announcement of coming judgment and restoration — often in the very same poem. Why do you think the Bible holds judgment and hope together instead of separating "bad news" books from "good news" books?</li>
+          <li><strong class="ref">Read Isaiah 11:1-9.</strong> What does the text say will characterize this coming king, and what happens between the animals later in the passage? What does this picture of a coming king and a renewed creation tell you about what God is ultimately after?</li>
+          <li>The prophets were mostly ignored in their own lifetimes and only taken seriously after their warnings came true. Is there a "prophetic" voice in your own life right now — a person, a conviction, an uncomfortable truth — that you've been tuning out?</li>
+          <li>Where do you personally see the kind of thing the prophets railed against — injustice toward the vulnerable, worship or "faith" that's disconnected from how people actually treat each other? What would taking that seriously look like for you this week?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-15">
+    <div class="entry-head">
+      <p class="kicker">Wisdom &middot; Week 15 of 19</p>
+      <h2>The Books of Solomon</h2>
+      <p class="blurb">Three books in the Bible are connected to King Solomon: Proverbs, Ecclesiastes, and Song of Songs. Solomon asked God for wisdom instead of wealth or power, and for a while he ruled Israel in remarkable abundance — but he ultimately let his heart be pulled away by everything he had gathered. These three books pick up his story from different angles, each wrestling with the same question that goes all the way back to the garden of Eden: will we take hold of wisdom on our own terms, or receive it as a gift from God?</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/books-solomon/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2015%20-%20The%20Books%20of%20Solomon.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/quest-wisdom/" target="_blank" rel="noopener">The Quest for Wisdom</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/solomon-wisest-fools/" target="_blank" rel="noopener">Solomon: The Wisest of the Fools</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/proverbs-lady-wisdom-lady-folly/" target="_blank" rel="noopener">Proverbs: Lady Wisdom and Lady Folly</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/song-songs-semi-erotic-love-poetry/" target="_blank" rel="noopener">Song of Songs</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/solomon-cynic-job-you-never-knew/" target="_blank" rel="noopener">Solomon the Cynic (Ecclesiastes)</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Who's the wisest person you personally know — not just smart, but wise? What makes them different from someone who's simply intelligent?</li>
+          <li><strong class="ref">Read Proverbs 1.</strong> Where does Wisdom go to call out, and what does she say will happen to those who ignore her? What does it mean to you that wisdom is portrayed as actively pursuing us, rather than something we only find if we go looking hard enough?</li>
+          <li>Proverbs 1 also warns against being lured in by people who promise easy gain through shortcuts and violence. What's the modern version of that kind of enticement — the voice that says the fast, self-serving path is smarter than the patient, honest one?</li>
+          <li>It's striking that Proverbs — a book urging faithfulness to wisdom — is attributed to Solomon, the very king whose story ends in failure. Why do you think the Bible would put warnings about wisdom in the mouth of someone who didn't ultimately live them out?</li>
+          <li><strong class="ref">Read Ecclesiastes 12.</strong> What images does the poem use to describe old age and death, and what's the final instruction the book lands on? Why do you think Ecclesiastes insists on being this blunt about mortality instead of ending on a more comfortable note?</li>
+          <li>Ecclesiastes repeats that life "under the sun" is fleeting and often unfair — <em>hevel</em>, or vapor. How do you personally hold on to faith and purpose when so much of life feels outside your control?</li>
+          <li><strong class="ref">Read Song of Songs 4.</strong> What does the lover say he finds beautiful about his beloved, and how does she respond to his pursuit? Have you ever considered that human longing for intimacy might point toward something bigger, our deeper design to be known and to know?</li>
+          <li>Proverbs, Ecclesiastes, and Song of Songs each offer a different lens on "the good life" — one confident that wisdom leads to blessing, one honest about how unpredictable life actually is, and one celebrating desire and pleasure. Why might the Bible want to hold all three perspectives together instead of settling on just one?</li>
+          <li>Every day, in ways big and small, we choose between being "wise in our own eyes" and trusting God's wisdom instead. Where is that choice most real for you right now?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-16">
+    <div class="entry-head">
+      <p class="kicker">Apocalyptic &middot; Week 16 of 19</p>
+      <h2>Apocalyptic Literature</h2>
+      <p class="blurb">"Apocalypse" doesn't mean the end of the world — it's a Greek word that means "to uncover" or "reveal." In the Bible, an apocalypse happens when God pulls back the curtain on ordinary life and lets someone see things from a heavenly vantage point, transforming how they see their circumstances. Understanding it means learning to trace its imagery — the chaotic sea, wild beasts, a throne room in the heavens — through the whole story of the Bible, rather than treating it as a private code to crack.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/apocalyptic-literature/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2016%20-%20Apocalyptic%20Literature.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <span class="pod-fallback">No single matching episode found — <a href="https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/" target="_blank" rel="noopener">browse the podcast series</a> for related conversations.</span>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>When you hear the word "apocalyptic" or "the apocalypse," what images come to mind? Does that picture come more from the Bible, or from movies and pop culture?</li>
+          <li><strong class="ref">Read Isaiah 6.</strong> What does Isaiah see in this vision, and what does he say the moment he sees it? Why do you think encountering God's holiness undoes Isaiah before it commissions him?</li>
+          <li>Isaiah's vision doesn't just show him the future — it sends him back into his ordinary life with a new assignment. If you were given a sudden, clear glimpse of what's really going on beneath your current circumstances, what part of your life would you most want that perspective on?</li>
+          <li><strong class="ref">Read Daniel 7.</strong> What does Daniel see come up out of the sea, and what is given to "one like a son of man" later in the vision? What does the contrast between the beastly kingdoms and this figure tell you about how God's kingdom is different from the kingdoms of the world?</li>
+          <li>Apocalyptic imagery — the chaotic sea, wild beasts, a throne in the heavens — shows up again and again across the Bible, all the way back to Genesis. Why do you think the biblical authors kept reusing the same pictures instead of inventing new ones each time?</li>
+          <li><strong class="ref">Read Revelation 1.</strong> How does John describe the risen Jesus in this vision, and how does John himself respond to seeing him? This vision follows the exact same pattern as Isaiah's and Daniel's centuries earlier — does it change how you think about Revelation to realize it's less a coded countdown to the future and more an "unveiling" of who's really in charge, right now?</li>
+          <li>Because apocalypse means "unveiling" rather than "catastrophe," how might that change how you'd want to approach reading — or hearing sermons about — the book of Revelation?</li>
+          <li>All three of these visions gave the person who received them comfort or courage to face something hard in their present moment. What's a hard "present moment" in your life where you could use that same kind of heavenly perspective?</li>
+          <li>What's one piece of hope from these passages that you want to carry with you into this week?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-17">
+    <div class="entry-head">
+      <p class="kicker">Law &middot; Week 17 of 19</p>
+      <h2>Biblical Law</h2>
+      <p class="blurb">The first books of the Bible contain more than 600 laws, and it's easy to either skip past them or read them as a strict behavior manual. But in the story of the Bible, the law isn't a divine checklist handed down from nowhere — it's the terms of a covenant relationship, given to a people God had already rescued. Israel is called to be a "kingdom of priests," and the laws are meant to spell out what a nation living in relationship with God could actually look like.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/reading-biblical-law/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2017%20-%20Biblical%20Law.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/purpose-law/" target="_blank" rel="noopener">The Purpose of the Law</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/law-covenantal-partnership/" target="_blank" rel="noopener">The Law as a Covenantal Partnership</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/gods-wisdom-law/" target="_blank" rel="noopener">God's Wisdom in the Law</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/law-revolution/" target="_blank" rel="noopener">The Law as a Revolution</a>
+        <a class="pod-link" href="https://bibleproject.com/podcasts/jesus-fulfills-law/" target="_blank" rel="noopener">Jesus Fulfills the Law</a>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(9 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>When you hear "the Law" in the Bible, what's your gut reaction — a list of rules, ancient history that doesn't apply anymore, something else? Has your view of it changed over the years?</li>
+          <li><strong class="ref">Read Exodus 20.</strong> What does God say about himself and about Israel before he gives a single command? How does it change the way you read the commandments that follow, knowing they come after rescue rather than before it?</li>
+          <li>If you had to summarize your own life's guiding "rules" the way the Ten Commandments summarize Israel's covenant, what would be on your short list?</li>
+          <li><strong class="ref">Read Leviticus 16.</strong> What happens to the two goats in this chapter, and who is allowed to enter the Most Holy Place, and how often? What does this ritual reveal about how ancient Israel understood sin and forgiveness, and how does it shape the way you think about being forgiven?</li>
+          <li><strong class="ref">Read Leviticus 25.</strong> What specifically happens to land, debts, and those who've been enslaved during the Year of Jubilee? Why do you think God built an economic reset like this into Israel's calendar every fifty years, and is there a version of that kind of thinking that could apply to your life or community today?</li>
+          <li><strong class="ref">Read Deuteronomy 11.</strong> What does Moses tell Israel to do with "these words," and in what everyday moments does he say to talk about them? What practices actually help you keep the truths that matter most in front of you day to day?</li>
+          <li>The law codes of Israel's neighbors were often treated as monuments to a king's wisdom rather than an actual rulebook judges consulted case by case. Israel's laws, by contrast, spell out the character of the God they belonged to. How does thinking of the law as "wisdom for a covenant relationship" rather than "a rulebook to check off" change how you approach the stranger or difficult laws in Leviticus and Deuteronomy?</li>
+          <li>Jesus said he came to fulfill the law, not abolish it, and summarized the whole thing as loving God and loving your neighbor as yourself. How well does that lens work for you when you run into an Old Testament law that seems strange or hard to apply today?</li>
+          <li>Where in your life this week would "loving your neighbor as yourself" look concretely different from what you're currently doing?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-18">
+    <div class="entry-head">
+      <p class="kicker">Letters &middot; Week 18 of 19</p>
+      <h2>New Testament Letters: Historical Context</h2>
+      <p class="blurb">The New Testament letters weren't written as timeless essays on theology — they're real letters from a real sender to a real audience, written for a particular purpose in response to a particular situation. Reading them well means asking the same questions you'd ask about anyone else's mail: who's writing, who's receiving, what history do they share, and what circumstance prompted the letter in the first place. These letters also landed in the honor-and-status world of the Roman Empire — a value system the gospel kept turning upside down.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/new-testament-letters-epistles-historical-context/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2018%20-%20New%20Testament%20Letters%20%28Historical%20Context%29.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <span class="pod-fallback">No single matching episode found — <a href="https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/" target="_blank" rel="noopener">browse the podcast series</a> for related conversations.</span>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(10 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Have you ever read a text, email, or letter that wasn't written to you — or one where you didn't know the full backstory — and completely misread what was going on? What changed once you learned the context?</li>
+          <li><strong class="ref">Read Philippians 1:1-11.</strong> What does Paul say he does every time he remembers the Philippians, and what specifically does he thank God for (vv. 3-5)? What does it tell you that Paul begins his letters with real, specific gratitude for actual people, rather than a general theological statement?</li>
+          <li><strong class="ref">Read Philippians 1:12-26.</strong> What does Paul say has happened as a result of his imprisonment, and how has it affected the people around him (vv. 12-14)? Knowing he's writing these words as a literal prisoner of Rome, how does that change the weight of what he says here about joy and purpose?</li>
+          <li><strong class="ref">Read Philippians 2:1-11.</strong> What does this passage say Jesus had, and what did he do with it instead of holding onto it (vv. 6-8)? In a culture obsessed with honor, status, and climbing the social ladder, how radical would Jesus "emptying himself" and taking on the nature of a servant have sounded?</li>
+          <li><strong class="ref">Read Philippians 3:1-11.</strong> What credentials does Paul list for himself, and what word does he use for them by comparison to knowing Christ (vv. 4-8)? Given that other churches were being pressured by traveling teachers to adopt circumcision, what situation do you think Paul is responding to here?</li>
+          <li><strong class="ref">Read Philippians 4:2-3.</strong> Who does Paul name in this passage, and what does he specifically ask them to do? What does it tell you that Paul is willing to name an actual, specific conflict in the letter rather than speaking only in the abstract?</li>
+          <li><strong class="ref">Read Philippians 4:10-19.</strong> What does Paul say the Philippians did for him, and what does he say no other church had done (v. 15)? How does learning that part of the occasion for this letter was a thank-you for their financial support change the way you read everything that came before it?</li>
+          <li>A line like "I can do all this through him who gives me strength" (Philippians 4:13) gets lifted out and printed on coffee mugs as a promise of personal achievement — but in context, Paul is talking specifically about being content whether he has plenty or nothing. What's a "sound-byte" Bible verse you've heard used out of context? Does knowing the real situation behind it change how you hear it?</li>
+          <li>Roman society ran on a strict hierarchy — wealth, family name, and status determined your worth, and everyone below the top was expected to know their place. Where do you see the gospel Paul describes in Philippians pushing back against that hierarchy?</li>
+          <li>Paul wrote this letter to friends he deeply loved, in the middle of his own hardship, to encourage them in theirs. Is there someone in your life right now who could use that kind of letter from you — grounded in your shared history and their specific situation? What would you want to say?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+  <section class="entry" id="week-19">
+    <div class="entry-head">
+      <p class="kicker">Letters &middot; Week 19 of 19</p>
+      <h2>New Testament Letters: Literary Context</h2>
+      <p class="blurb">Paul's letters weren't dashed off in one sitting — they were carefully composed over weeks, often with input from a team of co-workers, and built to be read aloud in one sitting to a gathered church. Ancient letters followed a predictable shape: an opening naming the sender and recipient, a thanksgiving, the main body of the argument, and a closing. Because these letters were meant to be heard as a single, coherent whole, their authors used repeated words and transition phrases to signal how one idea built on the next.</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="https://bibleproject.com/videos/new-testament-letters-literary-context/" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="guides/Week%2019%20-%20New%20Testament%20Letters%20%28Literary%20Context%29.pdf" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        <span class="pod-fallback">No single matching episode found — <a href="https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/" target="_blank" rel="noopener">browse the podcast series</a> for related conversations.</span>
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">(10 questions)</span></summary>
+      <div class="guide-body">
+        <ol>
+          <li>Think of a well-organized speech, sermon, or argument you've heard that really stuck with you. What made it easy to follow — a clear structure, a repeated phrase, a turning point you could feel coming?</li>
+          <li><strong class="ref">Read Romans 1:1-6.</strong> What does Paul call himself in verse 1, and what does he say about who Jesus is and what he's called Paul to do? What does it tell you that Paul uses even the "opening address" to set the tone and themes for the entire letter?</li>
+          <li><strong class="ref">Read Romans 1:8-10.</strong> What does Paul say he thanks God for, and what does he say he constantly does in his prayers for them (vv. 8-10)? What does his thanksgiving here — remembering them "constantly," praying to finally visit — tell you about his relationship with a church he had never even met in person?</li>
+          <li><strong class="ref">Read Romans 12:1-2.</strong> What does Paul urge the Romans to do with their bodies, and what does he say they should not do, but instead be transformed by (vv. 1-2)? Romans 12 opens with "Therefore" — a hinge word connecting eleven chapters of dense argument to a whole new section about how to actually live. Why do you think Paul waits until now to start telling the Romans how to behave?</li>
+          <li><strong class="ref">Read Romans 12:3-13.</strong> What specific gifts or roles does Paul name in this passage, and what image does he use to describe how they fit together (vv. 4-8)? What is Paul building toward — what does he want this specific church, made up of very different kinds of people, to understand about themselves?</li>
+          <li><strong class="ref">Read Romans 16:17-20.</strong> What does Paul specifically instruct the Romans to do about people who "cause divisions," and what does he promise will happen to Satan (vv. 17, 20)? Given everything Paul has said about unity and love throughout the letter, why end on this particular note instead of a simple farewell?</li>
+          <li>Paul's letters typically ran far longer than the average ancient letter — Romans and 1 Corinthians alone would have cost the equivalent of thousands of dollars to compose and send in the first century. Why do you think Paul was willing to invest that much time, money, and effort into one piece of correspondence?</li>
+          <li>Knowing that these letters were built as single, unified arguments — not loose collections of stand-alone verses — how might that change the way you personally read and quote Scripture going forward?</li>
+          <li>Think of a piece of writing you need to do soon — an email, a hard conversation, a word of encouragement to a friend. What's the one "main idea" you'd want everything else to connect back to, the way Paul's whole letter connects back to his opening?</li>
+          <li>This is the last week of our 19-week study. Looking back across everything we've covered — from what the Bible even is, to how to read its different genres, all the way to these letters — what's one way your approach to reading Scripture has actually changed?</li>
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>Videos and podcast episodes are produced by <a href="https://bibleproject.com" target="_blank" rel="noopener">BibleProject</a>, a nonprofit, and are free to watch and share. Discussion guides on this page are written for our group.</p>
+</footer>
+
+<script>
+  document.getElementById('expand-all').addEventListener('click', function () {
+    document.querySelectorAll('details.guide').forEach(function (d) { d.open = true; });
+  });
+  document.getElementById('collapse-all').addEventListener('click', function () {
+    document.querySelectorAll('details.guide').forEach(function (d) { d.open = false; });
+  });
+</script>
+</body>
+</html>
