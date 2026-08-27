@@ -9,9 +9,8 @@ Small group hub for a 19-week study through BibleProject's *How to Read the Bibl
 
 This is a static site with no build step. To serve it with GitHub Pages:
 
-1. Push this repo to GitHub.
-2. In the repo's **Settings → Pages**, set the source to the `main` branch, root folder.
-3. The hub will be live at `https://<username>.github.io/<repo-name>/`.
+1. In the repo's **Settings → Pages**, set the source to the `main` branch, root folder.
+2. The hub will be live at `https://dracozombie19.github.io/meditative-mongoose/`.
 
 ## Updating a week's guide
 
