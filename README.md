@@ -15,3 +15,7 @@ This is a static site with no build step. To serve it with GitHub Pages:
 ## Updating a week's guide
 
 Edit the markdown in `guides/`, then regenerate the matching PDF and re-check the discussion questions embedded in `index.html` match.
+
+## License
+
+This content is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — see [LICENSE](LICENSE).
