@@ -15,7 +15,7 @@ The Bible isn't written in one uniform style — tonight we'll look at a few of 
 
 6. Jonah is about to storm off in anger at God again just two chapters later, after Nineveh repents. Does his prayer in chapter 2 sound to you like genuine repentance, or something else? What do you make of that tension?
 
-7. **Read Romans 8.** What does Paul say is now true for those who are in Christ Jesus, and what does he list that can't separate us from the love of God? This is prose discourse — Paul building a connected, logical argument (notice words like "therefore," "because," "so that"). What is Paul actually trying to persuade his readers to believe or do in this chapter?
+7. **Read Romans 8:1-4 and 8:31-39.** What does Paul say is now true for those who are in Christ Jesus, and what does he list that can't separate us from the love of God? This is prose discourse — Paul building a connected, logical argument (notice words like "therefore," "because," "so that"). What is Paul actually trying to persuade his readers to believe or do in this chapter?
 
 8. Discourse like Romans 8 is built to engage your reasoning; poetry like Jonah's prayer is built to engage your imagination and emotions. Which style do you personally connect with more easily when you read Scripture, and which one do you tend to skim past?
 

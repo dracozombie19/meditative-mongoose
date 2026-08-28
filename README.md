@@ -14,7 +14,14 @@ This is a static site with no build step. To serve it with GitHub Pages:
 
 ## Updating a week's guide
 
-Edit the markdown in `guides/`, then regenerate the matching PDF and re-check the discussion questions embedded in `index.html` match.
+Edit the markdown in `guides/`, then regenerate the matching PDF with `build_study_pdfs.py` (requires Edge or Chrome installed):
+
+```
+python build_study_pdfs.py                                 # rebuild every guide in guides/
+python build_study_pdfs.py "guides/Week 01 - What Is the Bible.md"   # rebuild just one
+```
+
+Re-check that the discussion questions embedded in `index.html` still match afterward — the hub inlines the guide text rather than linking out to the markdown.
 
 ## License
 
