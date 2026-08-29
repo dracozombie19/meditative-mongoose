@@ -1,0 +1,320 @@
+site:
+  podcast_series_url: https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/
+weeks:
+- num: 1
+  category: Orientation
+  title: What Is the Bible?
+  nav_label: What Is the Bible?
+  guide: guides/Week 01 - What Is the Bible.md
+  video: https://bibleproject.com/videos/what-is-bible/
+  blurb: >-
+    The Bible isn't one book but a small library — 39 Old Testament books (the Hebrew TaNaK: Torah, Prophets,
+    Writings) written in Hebrew and Aramaic over more than 1,000 years, and 27 New Testament books written
+    in Greek within a few decades of Jesus by his early followers. Different Christian traditions include
+    a few additional books beyond this core, but all agree the story centers on Jesus.
+  podcasts:
+  - label: The Bible as Divine Literary Art
+    url: https://bibleproject.com/podcasts/bible-divine-literary-art/
+  - label: What's in Your Bible?
+    url: https://bibleproject.com/podcasts/what-is-your-bible/
+- num: 2
+  category: Orientation
+  title: The Story of the Bible
+  nav_label: The Story of the Bible
+  guide: guides/Week 02 - The Story of the Bible.md
+  video: https://bibleproject.com/videos/the-story-of-the-bible/
+  blurb: >-
+    The Bible reads like a library, but it's actually one continuous story with a plot that moves from
+    creation to new creation. It opens with God shaping a good world and inviting humans to rule it well,
+    and it closes with God and humanity dwelling together in a renewed creation. In between, the story
+    tracks humanity's repeated failure to trust God's definition of good and evil, God's choice to work
+    through one family — Israel — to bless the whole world, and finally Jesus, who fulfills Israel's calling
+    and throws the story open to everyone.
+  podcasts:
+  - label: What Is the Story of the Bible?
+    url: https://bibleproject.com/podcasts/what-story-bible/
+- num: 3
+  category: Orientation
+  title: Literary Styles in the Bible
+  nav_label: Literary Styles
+  guide: guides/Week 03 - Literary Styles in the Bible.md
+  video: https://bibleproject.com/videos/literary-styles-bible/
+  blurb: >-
+    The Bible isn't written in one uniform style — tonight we'll look at a few of the different kinds
+    of writing it uses, and what changes once you notice which one you're in.
+  podcasts:
+  - label: Literary Genres and the Stories We Tell Ourselves
+    url: https://bibleproject.com/podcasts/how-read-bible-part-3-intro-literary-genres-and-stories-we-tell-ourselves/
+  - label: Poetry, Narrative, and Prose Discourse
+    url: https://bibleproject.com/podcasts/how-read-bible-part-4-poetry-narrative-and-prose-discourse-genres/
+- num: 4
+  category: Narrative
+  title: The Bible as Jewish Meditation Literature
+  nav_label: Meditation Literature
+  guide: guides/Week 04 - The Bible as Jewish Meditation Literature.md
+  video: https://bibleproject.com/videos/bible-jewish-meditation-literature-h2r/
+  blurb: >-
+    Ancient Hebrew narrative works differently than most of the storytelling we're used to today. Where
+    modern stories spell out what characters look like, why they act the way they do, and how we're supposed
+    to feel about it, biblical authors frequently leave those details out on purpose. These gaps are invitations
+    to slow down, sit with the ambiguity, and return to the same story again and again over a lifetime.
+    The Bible itself describes this kind of slow, repeated engagement as "meditation."
+  podcasts:
+  - label: Why Isn't There More Detail in Bible Stories?
+    url: https://bibleproject.com/podcasts/how-read-bible-part-5-why-isnt-there-more-detail-bible-stories/
+  - label: The Bible as Jewish Meditation Literature
+    url: https://bibleproject.com/podcasts/how-read-bible-part-6-jewish-scripture-meditation-vs-modern-meditation/
+- num: 5
+  category: Narrative
+  title: Plot in Biblical Narrative
+  nav_label: Plot
+  guide: guides/Week 05 - Plot in Biblical Narrative.md
+  video: https://bibleproject.com/videos/plot-biblical-narrative/
+  blurb: >-
+    Nearly half of the Bible is written as narrative, and narrative works by arranging characters and
+    events into a plot — a conflict that builds toward a climax and finds resolution. Biblical stories
+    almost always work on multiple layers at once: a small scene fits inside a larger story, which fits
+    inside a bigger movement, which fits inside the single sweeping storyline of the whole Bible. Reading
+    a scene in isolation, without asking how it fits into that larger plot, can completely flip its meaning.
+  podcasts:
+  - label: Plot in Biblical Narrative
+    url: https://bibleproject.com/podcasts/how-read-bible-part-7-understanding-plot-and-narrative-bible-stories/
+- num: 6
+  category: Narrative
+  title: Character in Biblical Narrative
+  nav_label: Character
+  guide: guides/Week 06 - Character in Biblical Narrative.md
+  video: https://bibleproject.com/videos/character-biblical-narrative/
+  blurb: >-
+    Biblical authors build characters very differently than a modern novel or movie would. Instead of
+    describing what someone looks like or explaining their inner thoughts, the Bible tends to reveal character
+    through a handful of carefully chosen details — a name, a physical trait, an action, a line of dialogue
+    — and then steps back and lets you decide what to make of it. That's a strategic choice, not a lack
+    of skill: the author is trusting you to do some of the work yourself.
+  podcasts:
+  - label: Character in Biblical Narrative
+    url: https://bibleproject.com/podcasts/characters-bible/
+- num: 7
+  category: Narrative
+  title: Setting in Biblical Narrative
+  nav_label: Setting
+  guide: guides/Week 07 - Setting in Biblical Narrative.md
+  video: https://bibleproject.com/videos/setting-biblical-narrative/
+  blurb: >-
+    In storytelling, the place and time where a scene happens isn't just backdrop — it carries meaning
+    and sets expectations, the same way a courtroom or a haunted house immediately cues us in on what
+    kind of story we're about to watch. Biblical authors use setting the same way: certain places and
+    time periods, like "the east" or the number forty, pick up meaning across the whole Bible, so that
+    every time they show up again, they arrive loaded with memory and anticipation.
+  podcasts:
+  - label: Setting in Biblical Narrative
+    url: https://bibleproject.com/podcasts/understanding-settings-bible/
+- num: 8
+  category: Narrative
+  title: Design Patterns in Biblical Narrative
+  nav_label: Design Patterns
+  guide: guides/Week 08 - Design Patterns in Biblical Narrative.md
+  video: https://bibleproject.com/videos/design-patterns-biblical-narrative/
+  blurb: >-
+    Biblical authors weave individual stories together into one larger story using deliberate patterns
+    — repeated words, repeated scenes, and repeated sequences of action that echo across hundreds of years
+    and dozens of different characters. Once you start noticing these patterns, you realize that stories
+    placed far apart in the Bible are actually in conversation with one another, and that they're all
+    building toward Jesus.
+  podcasts:
+  - label: Live from Milpitas, Pt. 1
+    url: https://bibleproject.com/podcasts/design-patterns-bible-live-milpitas-part-1/
+  - label: Live from Milpitas, Pt. 2
+    url: https://bibleproject.com/podcasts/design-patterns-bible-live-milpitas-part-2/
+  - label: Crossing the Chaotic Waters
+    url: https://bibleproject.com/podcasts/design-patterns-bible-part-3-crossing-chaotic-waters/
+  - label: Chaotic Waters and Baptism
+    url: https://bibleproject.com/podcasts/design-patterns-bible-part-4-chaotic-waters-baptism/
+- num: 9
+  category: Gospel
+  title: The Gospel
+  nav_label: The Gospel
+  guide: guides/Week 09 - The Gospel.md
+  video: https://bibleproject.com/videos/how-to-read-gospel/
+  blurb: >-
+    The word "gospel" means "good news," and in the New Testament it specifically means the announcement
+    that God's kingdom has arrived in our world through the life, death, and resurrection of Jesus. Matthew,
+    Mark, Luke, and John each tell this same essential story, but each author arranges and highlights
+    different details to bring out a different facet of who Jesus is.
+  podcasts:
+  - label: What Does the Word "Gospel" Mean?
+    url: https://bibleproject.com/podcasts/what-does-word-gospel-mean/
+  - label: The Gospel Is More Than You Think
+    url: https://bibleproject.com/podcasts/gospel-more-you-think/
+  - label: Why Are There Four Accounts of the Gospel?
+    url: https://bibleproject.com/podcasts/why-are-there-4-gospels/
+  - label: The Extravagant Claim of the Gospel
+    url: https://bibleproject.com/podcasts/obvious-extravagant-claim-gospels-gospels-e4/
+- num: 10
+  category: Gospel
+  title: Parables
+  nav_label: Parables
+  guide: guides/Week 10 - Parables.md
+  video: https://bibleproject.com/videos/how-to-read-the-bible-the-parables-of-jesus/
+  blurb: >-
+    Jesus was a master storyteller, and many of his most famous teachings come to us as short, vivid stories
+    called parables. They aren't simple moral fables meant to illustrate a lesson — they're how Jesus
+    announced that God's kingdom was breaking into the world, often in ways that confused, provoked, or
+    upended his listeners' expectations. Reading a parable well means asking who's listening, what assumption
+    is being challenged, and what decision the story is pushing you toward.
+  podcasts: []
+- num: 11
+  category: Poetry
+  title: The Art of Biblical Poetry
+  nav_label: Biblical Poetry
+  guide: guides/Week 11 - The Art of Biblical Poetry.md
+  video: https://bibleproject.com/videos/art-biblical-poetry/
+  blurb: >-
+    Roughly a third of the Bible is poetry, and it works differently than narrative. Instead of moving
+    a plot forward, biblical poetry slows down and lingers, inviting readers into an experience rather
+    than just handing over information. Its basic building block is the couplet — two short lines placed
+    side by side, where the second line completes, deepens, or contrasts the first — which is part of
+    why poetry became the primary way the Hebrew prophets recorded God's own speech.
+  podcasts:
+  - label: The Thunder of God
+    url: https://bibleproject.com/podcasts/series-h2r-p17-poetry-e1-thunder-god/
+  - label: God Speaks in Poetry
+    url: https://bibleproject.com/podcasts/series-h2r-p18-poetry-e2-god-speaks-poetry/
+- num: 12
+  category: Poetry
+  title: Poetic Metaphor
+  nav_label: Poetic Metaphor
+  guide: guides/Week 12 - Poetic Metaphor.md
+  video: https://bibleproject.com/videos/metaphor-biblical-poetry/
+  blurb: >-
+    Metaphor isn't just decoration in language — it's the basic way humans make sense of the world. Biblical
+    poets draw from a shared set of images rooted in Israel's story: chaotic, stormy waters as danger
+    and death; dry land and gardens as safety and life; wild animals as threat; marriage as the picture
+    of covenant faithfulness. Because these images get reused across books written centuries apart, one
+    picture can carry an entire web of meaning that stretches from Genesis all the way to Revelation.
+  podcasts:
+  - label: Metaphor and Our Imagination
+    url: https://bibleproject.com/podcasts/series-h2r-p19-metaphor-e1-metaphor-our-imagination/
+  - label: The Mountain Garden and the Human Ideal
+    url: https://bibleproject.com/podcasts/series-h2r-p20-metaphor-e2-mountain-garden-human-ideal/
+  - label: Chaotic Waters
+    url: https://bibleproject.com/podcasts/series-h2r-p21-metaphor-e3-chaotic-waters/
+- num: 13
+  category: Poetry
+  title: The Book of Psalms
+  nav_label: Book of Psalms
+  guide: guides/Week 13 - The Book of Psalms.md
+  video: https://bibleproject.com/videos/book-of-psalms/
+  blurb: >-
+    The book of Psalms is the largest collection of poetry in the Bible, but it isn't a random anthology
+    — it was carefully arranged to be read from beginning to end, retelling the whole biblical story in
+    poetic form. It opens with poems about God's instruction and God's coming king, works through centuries
+    of lament tied to David's story and Israel's exile, and closes with an unrestrained five-poem burst
+    of praise — functioning as a kind of portable temple people could carry with them wherever they were.
+  podcasts: []
+- num: 14
+  category: Prophecy
+  title: The Prophets
+  nav_label: The Prophets
+  guide: guides/Week 14 - The Prophets.md
+  video: https://bibleproject.com/videos/the-prophets/
+  blurb: >-
+    The Old Testament prophets are often remembered as fortune-tellers, but that's not really what a "prophet"
+    means in the Bible. A prophet was God's messenger — someone who had a radical encounter with God's
+    presence and was then sent to speak on his behalf, mostly to call Israel back to faithfulness in the
+    covenant relationship. Most of what fills these fifteen books isn't prediction at all — it's blunt
+    accusation of injustice, urgent calls to repent, and some of the most hope-filled poetry in the whole
+    Bible sitting right alongside the harshest warnings.
+  podcasts:
+  - label: What Prophecy Is For
+    url: https://bibleproject.com/podcasts/what-prophecy/
+  - label: Prophets as Provokers
+    url: https://bibleproject.com/podcasts/prophets-provokers/
+- num: 15
+  category: Wisdom
+  title: The Books of Solomon
+  nav_label: Books of Solomon
+  guide: guides/Week 15 - The Books of Solomon.md
+  video: https://bibleproject.com/videos/books-solomon/
+  blurb: >-
+    Three books in the Bible are connected to King Solomon: Proverbs, Ecclesiastes, and Song of Songs.
+    Solomon asked God for wisdom instead of wealth or power, and for a while he ruled Israel in remarkable
+    abundance — but he ultimately let his heart be pulled away by everything he had gathered. These three
+    books pick up his story from different angles, each wrestling with the same question that goes all
+    the way back to the garden of Eden: will we take hold of wisdom on our own terms, or receive it as
+    a gift from God?
+  podcasts:
+  - label: The Quest for Wisdom
+    url: https://bibleproject.com/podcasts/quest-wisdom/
+  - label: 'Solomon: The Wisest of the Fools'
+    url: https://bibleproject.com/podcasts/solomon-wisest-fools/
+  - label: 'Proverbs: Lady Wisdom and Lady Folly'
+    url: https://bibleproject.com/podcasts/proverbs-lady-wisdom-lady-folly/
+  - label: Song of Songs
+    url: https://bibleproject.com/podcasts/song-songs-semi-erotic-love-poetry/
+  - label: Solomon the Cynic (Ecclesiastes)
+    url: https://bibleproject.com/podcasts/solomon-cynic-job-you-never-knew/
+- num: 16
+  category: Apocalyptic
+  title: Apocalyptic Literature
+  nav_label: Apocalyptic Lit.
+  guide: guides/Week 16 - Apocalyptic Literature.md
+  video: https://bibleproject.com/videos/apocalyptic-literature/
+  blurb: >-
+    "Apocalypse" doesn't mean the end of the world — it's a Greek word that means "to uncover" or "reveal."
+    In the Bible, an apocalypse happens when God pulls back the curtain on ordinary life and lets someone
+    see things from a heavenly vantage point, transforming how they see their circumstances. Understanding
+    it means learning to trace its imagery — the chaotic sea, wild beasts, a throne room in the heavens
+    — through the whole story of the Bible, rather than treating it as a private code to crack.
+  podcasts: []
+- num: 17
+  category: Law
+  title: Biblical Law
+  nav_label: Biblical Law
+  guide: guides/Week 17 - Biblical Law.md
+  video: https://bibleproject.com/videos/reading-biblical-law/
+  blurb: >-
+    The first books of the Bible contain more than 600 laws, and it's easy to either skip past them or
+    read them as a strict behavior manual. But in the story of the Bible, the law isn't a divine checklist
+    handed down from nowhere — it's the terms of a covenant relationship, given to a people God had already
+    rescued. Israel is called to be a "kingdom of priests," and the laws are meant to spell out what a
+    nation living in relationship with God could actually look like.
+  podcasts:
+  - label: The Purpose of the Law
+    url: https://bibleproject.com/podcasts/purpose-law/
+  - label: The Law as a Covenantal Partnership
+    url: https://bibleproject.com/podcasts/law-covenantal-partnership/
+  - label: God's Wisdom in the Law
+    url: https://bibleproject.com/podcasts/gods-wisdom-law/
+  - label: The Law as a Revolution
+    url: https://bibleproject.com/podcasts/law-revolution/
+  - label: Jesus Fulfills the Law
+    url: https://bibleproject.com/podcasts/jesus-fulfills-law/
+- num: 18
+  category: Letters
+  title: 'New Testament Letters: Historical Context'
+  nav_label: 'NT Letters: History'
+  guide: guides/Week 18 - New Testament Letters (Historical Context).md
+  video: https://bibleproject.com/videos/new-testament-letters-epistles-historical-context/
+  blurb: >-
+    The New Testament letters weren't written as timeless essays on theology — they're real letters from
+    a real sender to a real audience, written for a particular purpose in response to a particular situation.
+    Reading them well means asking the same questions you'd ask about anyone else's mail: who's writing,
+    who's receiving, what history do they share, and what circumstance prompted the letter in the first
+    place. These letters also landed in the honor-and-status world of the Roman Empire — a value system
+    the gospel kept turning upside down.
+  podcasts: []
+- num: 19
+  category: Letters
+  title: 'New Testament Letters: Literary Context'
+  nav_label: 'NT Letters: Craft'
+  guide: guides/Week 19 - New Testament Letters (Literary Context).md
+  video: https://bibleproject.com/videos/new-testament-letters-literary-context/
+  blurb: >-
+    Paul's letters weren't dashed off in one sitting — they were carefully composed over weeks, often
+    with input from a team of co-workers, and built to be read aloud in one sitting to a gathered church.
+    Ancient letters followed a predictable shape: an opening naming the sender and recipient, a thanksgiving,
+    the main body of the argument, and a closing. Because these letters were meant to be heard as a single,
+    coherent whole, their authors used repeated words and transition phrases to signal how one idea built
+    on the next.
+  podcasts: []

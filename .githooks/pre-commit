@@ -1,0 +1,57 @@
+#!/bin/sh
+# Keep derived files in sync with their sources, in the same commit.
+#
+#   guides/*.md            -> guides/*.pdf   (via build_study_pdfs.py)
+#   guides/*.md, weeks.yml,
+#   templates/, build code -> index.html     (via build_index.py)
+#
+# Enable once per clone:
+#   git config core.hooksPath .githooks
+#
+# Bypass in an emergency with:  git commit --no-verify
+
+set -e
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root"
+
+# Prefer the project virtualenv; fall back to whatever Python is on PATH.
+if [ -x ".venv/Scripts/python.exe" ]; then
+  python=".venv/Scripts/python.exe"
+elif [ -x ".venv/bin/python" ]; then
+  python=".venv/bin/python"
+else
+  python=$(command -v python 2>/dev/null || command -v python3 2>/dev/null || true)
+fi
+if [ -z "$python" ]; then
+  echo "pre-commit: no Python found (looked for .venv, then PATH)." >&2
+  echo "            Set up the venv:  python -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt" >&2
+  echo "            or bypass with:   git commit --no-verify" >&2
+  exit 1
+fi
+
+staged=$(git diff --cached --name-only --diff-filter=ACM)
+[ -n "$staged" ] || exit 0
+
+changed_guides=$(printf '%s\n' "$staged" | grep -E '^guides/.*\.md$' || true)
+index_inputs=$(printf '%s\n' "$staged" | grep -E '^(guides/.*\.md|weeks\.yml|templates/index\.html\.j2|build_index\.py|studyguide\.py)$' || true)
+
+if [ -n "$changed_guides" ]; then
+  echo "pre-commit: rebuilding PDFs for changed guides..."
+  old_ifs=$IFS
+  IFS='
+'
+  for g in $changed_guides; do
+    "$python" build_study_pdfs.py "$g"
+    git add "${g%.md}.pdf"
+  done
+  IFS=$old_ifs
+fi
+
+if [ -n "$index_inputs" ]; then
+  echo "pre-commit: regenerating index.html..."
+  "$python" build_index.py
+  git add index.html
+fi
+
+exit 0

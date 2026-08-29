@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Read the Bible</title>
+<meta name="description" content="Small group hub for the BibleProject 'How to Read the Bible' series — video, podcast, and discussion guide for all 19 weeks.">
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  :root {
+    --bg: #EDEBE1;
+    --surface: #F8F6EE;
+    --surface-2: #E3DFCF;
+    --ink: #22242B;
+    --ink-soft: #52544D;
+    --ink-faint: #85837A;
+    --accent: #7A1F2B;
+    --accent-strong: #5A1720;
+    --accent-tint: #F1DBDD;
+    --rule: #D5D0BE;
+    --focus: #7A1F2B;
+
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+    --font-body: Charter, "Bitstream Charter", "Sitka Text", Georgia, "Times New Roman", serif;
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171C;
+      --surface: #1B1E24;
+      --surface-2: #23262D;
+      --ink: #ECE8DD;
+      --ink-soft: #B8B4A7;
+      --ink-faint: #86837A;
+      --accent: #E08B8F;
+      --accent-strong: #F0AEB1;
+      --accent-tint: #3A2226;
+      --rule: #34373F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15171C;
+    --surface: #1B1E24;
+    --surface-2: #23262D;
+    --ink: #ECE8DD;
+    --ink-soft: #B8B4A7;
+    --ink-faint: #86837A;
+    --accent: #E08B8F;
+    --accent-strong: #F0AEB1;
+    --accent-tint: #3A2226;
+    --rule: #34373F;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-strong); }
+  :focus-visible { outline: 2.5px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+  h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; font-weight: 600; }
+
+  .kicker {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin: 0 0 0.5em;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--rule);
+    padding: 3.2rem 1.5rem 2.4rem;
+  }
+  .masthead-inner { max-width: 760px; margin: 0 auto; }
+  .masthead .eyebrow {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.9em;
+  }
+  .masthead h1 { font-size: clamp(2rem, 5vw, 2.85rem); line-height: 1.08; }
+  .masthead .dek {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 1rem 0 0;
+  }
+  .masthead .note {
+    font-family: var(--font-ui);
+    font-size: 0.88rem;
+    color: var(--ink-faint);
+    max-width: 62ch;
+    margin: 1.1rem 0 0;
+    line-height: 1.55;
+  }
+  .masthead .note strong { color: var(--ink-soft); }
+
+  /* ---------- Index rail ---------- */
+  .index-nav {
+    max-width: 760px;
+    margin: 1.8rem auto 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-family: var(--font-ui);
+  }
+  .index-nav a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35em;
+    padding: 0.32em 0.7em;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.78rem;
+  }
+  .index-nav a:hover { border-color: var(--accent); color: var(--accent); }
+  .index-nav .n { font-variant-numeric: tabular-nums; color: var(--ink-faint); font-size: 0.72rem; }
+
+  .toolbar {
+    max-width: 760px;
+    margin: 1.4rem auto 0;
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+  }
+  .toolbar button {
+    font: inherit;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    padding: 0;
+  }
+  .toolbar button:hover { color: var(--accent); }
+
+  /* ---------- Entries ---------- */
+  main { max-width: 760px; margin: 0 auto; padding: 0.5rem 1.5rem 4rem; }
+
+  .entry {
+    padding: 2.6rem 0;
+    border-bottom: 1px solid var(--rule);
+    scroll-margin-top: 1.2rem;
+  }
+  .entry:last-child { border-bottom: none; }
+
+  .entry-head h2 { font-size: 1.55rem; margin-bottom: 0.55rem; }
+  .entry-head .blurb { color: var(--ink-soft); font-size: 1rem; line-height: 1.65; max-width: 66ch; }
+
+  .resources {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.8rem;
+    align-items: center;
+    font-family: var(--font-ui);
+  }
+  .res-video {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    background: var(--accent);
+    color: var(--surface);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .res-video:hover { background: var(--accent-strong); color: var(--surface); }
+  .res-video::before { content: "▶"; font-size: 0.7em; }
+
+  .res-podcast { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+  .res-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-right: 0.15em;
+  }
+  .pod-link {
+    font-size: 0.8rem;
+    padding: 0.38em 0.75em;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--ink-soft);
+    background: var(--surface);
+  }
+  .pod-link:hover { border-color: var(--accent); color: var(--accent); }
+  .pod-fallback { font-size: 0.85rem; color: var(--ink-faint); }
+  .pod-fallback a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 3px; }
+
+  .res-pdf {
+    font-size: 0.8rem;
+    padding: 0.38em 0.75em;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--ink-soft);
+    background: var(--surface);
+  }
+  .res-pdf:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- Discussion guide disclosure ---------- */
+  details.guide { margin-top: 1.4rem; }
+  details.guide summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-ui);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink);
+    padding: 0.7em 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  details.guide summary::-webkit-details-marker { display: none; }
+  details.guide summary::before {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    background: var(--surface-2);
+    color: var(--accent);
+    font-size: 0.9em;
+    flex: none;
+  }
+  details.guide[open] summary::before { content: "–"; }
+  details.guide summary .count { color: var(--ink-faint); font-weight: 400; }
+
+  .guide-body { padding: 0.4rem 0 0.2rem; }
+  .guide-body ol { margin: 0; padding-left: 1.4em; }
+  .guide-body li {
+    margin: 0 0 1.05em;
+    padding-left: 0.3em;
+    line-height: 1.68;
+    font-size: 0.99rem;
+  }
+  .guide-body li::marker {
+    font-family: var(--font-ui);
+    color: var(--ink-faint);
+    font-size: 0.85em;
+  }
+  .ref {
+    background: var(--accent-tint);
+    color: var(--accent-strong);
+    padding: 0.05em 0.4em;
+    border-radius: 4px;
+    font-weight: 600;
+    font-style: normal;
+    white-space: nowrap;
+  }
+
+  .back-up { display: inline-block; margin-top: 1.6rem; font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-faint); text-decoration: none; }
+  .back-up:hover { color: var(--accent); }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    line-height: 1.6;
+  }
+  footer a { color: var(--ink-soft); }
+
+  /* ---------- Print ---------- */
+  @media print {
+    .masthead { background: none; border: none; padding: 0 0 1rem; }
+    .index-nav, .toolbar, .res-video, .pod-link, .pod-fallback, .res-pdf, .back-up { display: none !important; }
+    details.guide summary { border-top: none; padding: 0; }
+    details.guide summary::before { display: none; }
+    .guide-body, .guide-body ol, .guide-body li { display: block !important; }
+    .entry { break-inside: avoid-page; page-break-inside: avoid; border-bottom: none; padding: 1.2rem 0; }
+    .ref { background: none; padding: 0; }
+    body { color: #000; background: #fff; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead" id="top">
+  <div class="masthead-inner">
+    <p class="eyebrow">Small Group Study &middot; 19 Weeks</p>
+    <h1>How to Read the Bible</h1>
+    <p class="dek">Everything for our weekly study lives on this one page — the BibleProject video, related podcast listening, and the full discussion guide for each week. Bookmark this link; it's the only one you need.</p>
+    <p class="note"><strong>How this works:</strong> tap a week below to jump to it, or just scroll. Each entry opens with the video and podcast links, then a "Discussion guide" section you can expand to read or print the questions. Where a podcast episode matches the week's topic closely, it's linked directly — a few weeks link to the general podcast series instead, since BibleProject's conversations don't always map one-to-one to the videos.</p>
+  </div>
+  <ul class="index-nav">
+{% for w in weeks %}
+    <li><a href="#week-{{ w.num }}"><span class="n">{{ "%02d" | format(w.num) }}</span> {{ w.nav_label }}</a></li>
+{% endfor %}
+  </ul>
+  <div class="toolbar">
+    <button type="button" id="expand-all">Expand all guides</button>
+    <button type="button" id="collapse-all">Collapse all</button>
+  </div>
+</div>
+
+<main>
+
+{% for w in weeks %}
+  <section class="entry" id="week-{{ w.num }}">
+    <div class="entry-head">
+      <p class="kicker">{{ w.category }} &middot; Week {{ w.num }} of {{ total }}</p>
+      <h2>{{ w.title }}</h2>
+      <p class="blurb">{{ w.blurb }}</p>
+    </div>
+    <div class="resources">
+      <a class="res-video" href="{{ w.video }}" target="_blank" rel="noopener">Watch the video</a>
+      <a class="res-pdf" href="{{ w.pdf_url }}" target="_blank">Download PDF</a>
+      <div class="res-podcast">
+        <span class="res-label">Listen</span>
+        {% for p in w.podcasts %}
+        <a class="pod-link" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.label }}</a>
+        {% endfor %}
+        {% if not w.podcasts %}
+        <span class="pod-fallback">No single matching episode found — <a href="{{ site.podcast_series_url }}" target="_blank" rel="noopener">browse the podcast series</a> for related conversations.</span>
+        {% endif %}
+      </div>
+    </div>
+    <details class="guide">
+      <summary>Discussion guide <span class="count">({{ w.questions | length }} question{{ "" if w.questions | length == 1 else "s" }})</span></summary>
+      <div class="guide-body">
+        <ol>
+        {% for q in w.questions %}
+          <li>{{ q }}</li>
+        {% endfor %}
+        </ol>
+      </div>
+    </details>
+    <a class="back-up" href="#top">&uarr; Back to index</a>
+  </section>
+
+{% endfor %}
+</main>
+
+<footer>
+  <p>Videos and podcast episodes are produced by <a href="https://bibleproject.com" target="_blank" rel="noopener">BibleProject</a>, a nonprofit, and are free to watch and share. Discussion guides on this page are written for our group.</p>
+</footer>
+
+<script>
+  document.getElementById('expand-all').addEventListener('click', function () {
+    document.querySelectorAll('details.guide').forEach(function (d) { d.open = true; });
+  });
+  document.getElementById('collapse-all').addEventListener('click', function () {
+    document.querySelectorAll('details.guide').forEach(function (d) { d.open = false; });
+  });
+</script>
+</body>
+</html>

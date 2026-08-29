@@ -1,37 +1,27 @@
 #!/usr/bin/env python3
-"""
-Converts weekly Bible study markdown guides into printable PDFs.
+"""Converts the weekly Bible study markdown guides into printable PDFs.
 
-Expects each markdown file to follow this exact shape:
-
-    # Week N: Title
-    *Subtitle*
-
-    Intro paragraph (one or more lines, blank-line separated from what follows).
-
-    1. First question...
-    2. Second question...
-    ...
+The guide format and the markdown-to-HTML conversion live in ``studyguide.py``,
+shared with ``build_index.py`` so the PDF and the hub page can't disagree about
+what a guide says.
 
 Usage:
     python build_study_pdfs.py                     # convert every .md in guides/
-    python build_study_pdfs.py guides/Week 01 - What Is the Bible.md
-    python build_study_pdfs.py path/to/some/dir     # convert every .md in that dir
+    python build_study_pdfs.py "guides/Week 01 - What Is the Bible.md"
+    python build_study_pdfs.py path/to/some/dir    # convert every .md in that dir
 
 Each PDF is written next to its source markdown file, same name, .pdf extension
-(e.g. guides/Week 01 - What Is the Bible.md -> guides/Week 01 - What Is the Bible.pdf)
+(e.g. "guides/Week 01 - What Is the Bible.md" -> "guides/Week 01 - What Is the Bible.pdf")
 so the flat "guides/" layout that index.html links against stays in sync.
 """
 
 import base64
-import re
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
-WORKSPACE = Path(__file__).resolve().parent
-DEFAULT_DIR = WORKSPACE / "guides"
+from studyguide import guide_paths, inline_markdown, parse_guide
 
 # Common install locations for a headless-capable Chromium browser on Windows.
 BROWSER_CANDIDATES = [
@@ -67,57 +57,6 @@ def find_browser() -> str:
     )
 
 
-def inline_markdown(text: str) -> str:
-    """Convert **bold** and *italic* spans to HTML. Order matters: bold before italic."""
-    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
-    text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
-    return text
-
-
-def parse_study_guide(md_text: str) -> dict:
-    lines = [line.rstrip("\n") for line in md_text.splitlines()]
-    lines = [line for line in lines if line.strip() != "" or True]  # keep blanks as separators
-
-    # Strip leading blank lines
-    idx = 0
-    while idx < len(lines) and not lines[idx].strip():
-        idx += 1
-
-    title_line = lines[idx].lstrip("#").strip()
-    idx += 1
-    while idx < len(lines) and not lines[idx].strip():
-        idx += 1
-
-    subtitle_line = lines[idx].strip().strip("*")
-    idx += 1
-
-    # Skip blank lines before intro paragraph
-    while idx < len(lines) and not lines[idx].strip():
-        idx += 1
-
-    intro_parts = []
-    while idx < len(lines) and lines[idx].strip() and not re.match(r"^\d+\.\s", lines[idx].strip()):
-        intro_parts.append(lines[idx].strip())
-        idx += 1
-    intro = " ".join(intro_parts)
-
-    items = []
-    while idx < len(lines):
-        stripped = lines[idx].strip()
-        m = re.match(r"^\d+\.\s+(.*)$", stripped)
-        if m:
-            items.append(m.group(1))
-        idx += 1
-
-    return {
-        "title": title_line,
-        "subtitle": subtitle_line,
-        "intro": intro,
-        "items": items,
-    }
-
-
 def build_html(parsed: dict) -> str:
     items_html = "\n".join(f"<li>{inline_markdown(item)}</li>" for item in parsed["items"])
     return f"""<!DOCTYPE html>
@@ -141,13 +80,13 @@ def build_html(parsed: dict) -> str:
 
 def convert_one(md_path: Path, browser: str) -> Path:
     md_path = md_path.resolve()
-    parsed = parse_study_guide(md_path.read_text(encoding="utf-8"))
+    parsed = parse_guide(md_path.read_text(encoding="utf-8"))
     html = build_html(parsed)
 
     # Pass the page as a data: URI instead of a temp file on disk. Writing a temp
     # .html file and deleting it after the browser call is a race condition on
     # Windows: if a real (non-headless) instance of the browser is already
-    # running, launching it again — even with an isolated --user-data-dir —
+    # running, launching it again -- even with an isolated --user-data-dir --
     # sometimes hands the navigation off asynchronously, and the temp file can
     # already be gone by the time it's actually loaded, producing a PDF of
     # Edge's own "File not found" error page instead of the real content.
@@ -185,12 +124,12 @@ def main(argv: list[str]) -> None:
 
     targets: list[Path] = []
     if len(argv) <= 1:
-        targets = sorted(DEFAULT_DIR.glob("*.md"))
+        targets = guide_paths()
     else:
         for arg in argv[1:]:
             p = Path(arg)
             if p.is_dir():
-                targets.extend(sorted(p.glob("*.md")))
+                targets.extend(guide_paths(p))
             else:
                 targets.append(p)
 
