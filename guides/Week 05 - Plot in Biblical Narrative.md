@@ -13,7 +13,7 @@ Every scene in the Bible sits inside a bigger story — tonight we'll look at ho
 
 5. The battle is won with trumpets, torches, and clay jars instead of weapons or superior numbers. What point do you think the author is making about where real power actually comes from?
 
-6. **Read Judges 8.** What does Gideon say when Israel offers to make him king, and what does he do right afterward with the gold earrings they give him? How does this ending complicate a simple "hero wins the day" reading of Gideon's story?
+6. **Read Judges 8.** What does Gideon say when Israel offers to make him king, and what does he do right afterward with the gold earrings they give him? What's odd about that combination?
 
 7. Some readers describe biblical plots as following either a "comedy" arc (a character overcomes challenges and rises) or a "tragedy" arc (a character has everything going for them but self-destructs). Looking at the whole span of Judges 6-8, which arc do you think best fits Gideon, and why?
 
