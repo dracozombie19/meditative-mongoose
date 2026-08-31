@@ -15,7 +15,7 @@ Three books in the Bible are tied to King Solomon — tonight we'll look at Prov
 
 6. Ecclesiastes repeats that life "under the sun" is fleeting and often unfair — hevel, or vapor. How do you personally hold on to faith and purpose when so much of life feels outside your control?
 
-7. **Read Song of Songs 4.** What does the lover say he finds beautiful about his beloved, and how does she respond to his pursuit? This is unapologetically romantic, even sensual, poetry about desire and pursuit between two lovers — have you ever considered that human longing for intimacy might point toward something bigger, our deeper design to be known and to know?
+7. **Read Song of Songs 4.** What does the lover say he finds beautiful about his beloved, and how does she answer his pursuit? This is unabashedly romantic, even sensual, poetry — and the Bible devotes a whole book to it. Why do you think it's here? What does it say that Scripture treats human desire and delight as worth a book of their own?
 
 8. Proverbs, Ecclesiastes, and Song of Songs each offer a different lens on "the good life" — one confident that wisdom leads to blessing, one honest about how unpredictable life actually is, and one celebrating desire and pleasure. Why might the Bible want to hold all three perspectives together instead of settling on just one?
 

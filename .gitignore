@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# scratch file from an interrupted PDF render
+*.pdf.partial

@@ -5,18 +5,18 @@ Bible stories separated by centuries sometimes echo each other on purpose — to
 
 1. Have you ever noticed a movie or show deliberately echo an earlier scene — the same shot, the same line, the same choice — to make a point by comparison? What did that repetition make you think or feel?
 
-2. **Read Genesis 3:6-7.** What three things does the text say Eve does, in order, before she eats the fruit? Keep that sequence in mind as we look at a few more stories.
+2. The video traced one pattern — *see it, want it, take it* — from Eve through Aaron's golden calf to David. **Read Genesis 4:1-16**, the very next story after Eden. What does God say to Cain in verses 9-12 that he has already said, almost word for word, in Genesis 3? What is the author signaling by making the second story rhyme this closely with the first?
 
-3. **Read Genesis 16:1-6.** Sarai gives Hagar to Abram, and the same basic pattern of desiring and taking something outside of God's promise plays out again. What's different about the players here, and what's exactly the same?
+3. **Read Joshua 7:1, then 7:19-26.** Centuries later, an Israelite named Achan is caught. Read his confession in verse 21 — "I saw… I coveted… I took… hidden in my tent." How many earlier stories is that one sentence built to echo? What does it change about a story to realize it was written to rhyme with others?
 
-4. **Read Exodus 32:1-22.** What do the Israelites ask Aaron to make for them, and what does he do with the gold they bring him? What kind of consequences does one person's — or one community's — moment of temptation end up creating for everyone around them?
+4. This pattern turns up with completely different people — a couple in a garden, a priest at a mountain, a king on a roof, a soldier with stolen loot — spread across more than a thousand years. And the serpent from Genesis 3 never appears again. What are the biblical authors saying about human nature by building the same shape into story after story?
 
-5. **Read 2 Samuel 11:1-5.** What does David see from his roof, and what does he do about it? By this point, this pattern should feel familiar. Why do you think the biblical authors wanted you to recognize it here too?
+5. **Read Luke 3:21-22 and 4:1-13** (and glance at the last line of the genealogy in between, 3:38). Here's a different kind of design pattern — one author, one repeated phrase. Luke lines up scene after scene that each turn on "Son of God": the voice at the baptism, the genealogy ending "…the son of Adam, the son of God," then Satan's "if you are the Son of God." What is Luke getting you to do by circling the same title from several angles instead of just stating it once?
 
-6. This same "see, desire, take" pattern shows up with Adam and Eve, Abraham and Sarai, Aaron and Israel, and David — completely different characters spread across a huge span of time. What does this pattern suggest about the biblical authors' view of human nature?
+6. In Gethsemane, facing his own great temptation, Jesus says "not my will, but yours be done" — the first time in the whole story someone meets that moment and doesn't take. You've seen this from the video. Push further: why does it matter that the pattern finally breaks through surrender and suffering rather than through Jesus getting what he wanted?
 
-7. The Gospels tell us that when Jesus faced his own moment of temptation in the garden of Gethsemane, he prayed "not my desire, but yours be done" — flipping the pattern for the first time in the whole story. Why does it matter that this reversal happens through suffering and surrender rather than through Jesus simply getting what he wanted?
+7. Once you're looking for patterns, it gets tempting to "find" them everywhere — Tim Mackie admits this is the real risk of reading the Bible this way. What do you think separates a connection the author built on purpose from one a reader imagined?
 
-8. Where do you see this "see it, want it, take it" pattern playing out in your own life or in the temptations you regularly face?
+8. Where do you see the "see it, want it, take it" pattern running in your own life, or in the temptations you face most often?
 
-9. Knowing how intentionally these patterns were woven across so many different books and centuries, how does that shape your confidence in the Bible as one coordinated story rather than a loose collection of unrelated books?
+9. Knowing how deliberately these patterns were woven across dozens of books and centuries, how does that shape the way you think about the Bible — as one coordinated story rather than a loose anthology?

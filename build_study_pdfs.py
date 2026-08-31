@@ -16,9 +16,11 @@ so the flat "guides/" layout that index.html links against stays in sync.
 """
 
 import base64
+import os
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 from studyguide import guide_paths, inline_markdown, parse_guide
@@ -95,28 +97,63 @@ def convert_one(md_path: Path, browser: str) -> Path:
     data_uri = f"data:text/html;base64,{b64}"
 
     pdf_path = md_path.parent / (md_path.stem + ".pdf")
-    with tempfile.TemporaryDirectory(prefix="pdfbuild-", ignore_cleanup_errors=True) as profile_dir:
-        result = subprocess.run(
-            [
-                browser,
-                "--headless=new",
-                "--disable-gpu",
-                "--no-sandbox",
-                "--no-pdf-header-footer",
-                f"--user-data-dir={profile_dir}",
-                f"--print-to-pdf={pdf_path}",
-                data_uri,
-            ],
-            capture_output=True,
-            text=True,
-            timeout=60,
-        )
-    if result.returncode != 0:
-        raise RuntimeError(f"browser exited {result.returncode}: {result.stderr}")
-    if not pdf_path.exists() or pdf_path.stat().st_size == 0:
-        raise RuntimeError("browser exited cleanly but no PDF was written")
+
+    # Render to a scratch file beside the target, then swap it in atomically once
+    # it's complete. Two reasons:
+    #  - If a normal (non-headless) browser instance is already running, this
+    #    headless call can hand the render off to that process and return 0
+    #    *before* the PDF is on disk. So the exit code isn't enough -- we poll
+    #    the output until it stops growing (see _wait_for_pdf).
+    #  - The real guides/*.pdf is only touched on full success. A failed or
+    #    timed-out render leaves the previous PDF in place instead of a stub,
+    #    which matters when the pre-commit hook is about to `git add` it.
+    work = md_path.parent / f".{md_path.stem}.pdf.partial"
+    work.unlink(missing_ok=True)
+    try:
+        with tempfile.TemporaryDirectory(prefix="pdfbuild-", ignore_cleanup_errors=True) as profile_dir:
+            result = subprocess.run(
+                [
+                    browser,
+                    "--headless=new",
+                    "--disable-gpu",
+                    "--no-sandbox",
+                    "--no-pdf-header-footer",
+                    f"--user-data-dir={profile_dir}",
+                    f"--print-to-pdf={work}",
+                    data_uri,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+        if result.returncode != 0:
+            raise RuntimeError(f"browser exited {result.returncode}: {result.stderr}")
+        _wait_for_pdf(work)
+        os.replace(work, pdf_path)
+    finally:
+        work.unlink(missing_ok=True)
 
     return pdf_path
+
+
+def _wait_for_pdf(path: Path, timeout: float = 30.0) -> None:
+    """Block until *path* exists and its size holds steady, else raise on timeout.
+
+    The browser may still be flushing the file in a background process after the
+    launch command returns, so "the file exists" isn't enough -- we wait for two
+    equal, non-zero size readings ~0.5s apart before calling it done.
+    """
+    deadline = time.monotonic() + timeout
+    previous = -1
+    while time.monotonic() < deadline:
+        time.sleep(0.5)
+        if not path.exists():
+            continue
+        size = path.stat().st_size
+        if size > 0 and size == previous:
+            return
+        previous = size
+    raise RuntimeError("timed out waiting for the browser to finish writing the PDF")
 
 
 def main(argv: list[str]) -> None:

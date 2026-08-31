@@ -5,18 +5,18 @@
 
 1. When you hear the word "apocalyptic" or "the apocalypse," what images come to mind? Does that picture come more from the Bible, or from movies and pop culture?
 
-2. **Read Isaiah 6.** What does Isaiah see in this vision, and what does he say the moment he sees it? Why do you think encountering God's holiness undoes Isaiah before it commissions him?
+2. **Read 2 Kings 6:8-17.** Elisha's servant panics at the army surrounding the city. Elisha prays, "LORD, please open his eyes." What does the servant see once his eyes are opened — and what has actually changed in the situation? This tiny scene is "apocalyptic" in the truest sense of the word. Based on it, how would you define an "apocalypse"?
 
-3. Isaiah's vision doesn't just show him the future — it sends him back into his ordinary life with a new assignment. If you were given a sudden, clear glimpse of what's really going on beneath your current circumstances, what part of your life would you most want that perspective on?
+3. **Read Ezekiel 1:1-4, then 1:26-2:2.** Ezekiel is a war refugee beside a canal in Babylon when the sky opens. What does he see, and what does it do to his body? Why might a vision of God enthroned — *mobile*, out beyond the ruined temple — matter so much to someone who has just watched his homeland destroyed?
 
-4. **Read Daniel 7.** What does Daniel see come up out of the sea, and what is given to "one like a son of man" later in the vision? What does the contrast between the beastly kingdoms and this figure tell you about how God's kingdom is different from the kingdoms of the world?
+4. **Read Zechariah 4.** The prophet sees a golden lampstand and two olive trees and asks the interpreting angel, "What are these, my lord?" The heart of the answer is verse 6: "Not by might, nor by power, but by my Spirit." How does wrapping that line inside strange imagery deliver it with more force than just saying it plainly?
 
-5. Apocalyptic imagery — the chaotic sea, wild beasts, a throne in the heavens — shows up again and again across the Bible, all the way back to Genesis. Why do you think the biblical authors kept reusing the same pictures instead of inventing new ones each time?
+5. The same stock of images — the raging sea, monstrous beasts, a throne above the waters — turns up again and again across the Bible, starting in Genesis 1. Why do you think the biblical writers kept reusing the same pictures instead of inventing new ones? How would "studying the rest of your Bible" actually help you read a book like Revelation?
 
-6. **Read Revelation 1.** How does John describe the risen Jesus in this vision, and how does John himself respond to seeing him? This vision follows the exact same pattern as Isaiah's and Daniel's centuries earlier — does it change how you think about Revelation to realize it's less a coded countdown to the future and more an "unveiling" of who's really in charge, right now?
+6. **Read Revelation 5.** John weeps because no one can open the scroll. He's told, "The Lion of the tribe of Judah has conquered" — and turns to see "a Lamb standing, as though it had been slain." What is the vision doing by swapping a lion for a slaughtered lamb at the exact moment of triumph?
 
-7. Because apocalypse means "unveiling" rather than "catastrophe," how might that change how you'd want to approach reading — or hearing sermons about — the book of Revelation?
+7. Because "apocalypse" means "unveiling" rather than "catastrophe," how might that change the way you'd want to read — or hear sermons about — the book of Revelation?
 
-8. All three of these visions gave the person who received them comfort or courage to face something hard in their present moment. What's a hard "present moment" in your life where you could use that same kind of heavenly perspective?
+8. Every one of these visions was given to someone facing something hard — exile, a besieging army, a church under pressure — to let them see their situation from above. What's a hard "present moment" in your life where you could use that same kind of perspective?
 
 9. What's one piece of hope from these passages that you want to carry with you into this week?
