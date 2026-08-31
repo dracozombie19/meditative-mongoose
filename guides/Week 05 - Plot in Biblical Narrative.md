@@ -5,18 +5,20 @@ Every scene in the Bible sits inside a bigger story — tonight we'll look at ho
 
 1. Have you ever badly misread a movie or book because you only caught one scene out of context — like walking into a film halfway through? What happened once you finally saw the whole thing?
 
-2. **Read Judges 6.** What is Gideon doing when the angel first finds him, and what does he ask God for before he'll act on what he's been told? What does this opening chapter reveal about Gideon's character, even before any fighting starts?
+2. The video walked through the whole Gideon story in Judges 6-7. Before we go further: in that story, where do you think the *real* conflict actually sits? Not "how will Gideon win the battle," but what tension does the narrator seem most interested in — and where does it get resolved, if it does?
 
-3. The famous "fleece" scene is often taught as a model for how to discern God's will. But read in context, it looks more like Gideon repeatedly testing God out of fear rather than acting in faith. Does knowing the larger story change how you'd apply this scene to your own life?
+3. **Read Judges 8:22-31.** After the famous victory, Gideon gives the theologically correct answer — "I will not rule over you… the LORD will rule over you" (v. 23) — and then immediately makes a gold ephod that becomes "a snare to Gideon and to his household," and names a son Abimelech, which means "my father is king." What has happened to Gideon by the end of his own story? Does his ending change how you read the victory that came before it?
 
-4. **Read Judges 7.** What two rounds of cuts does God make to Gideon's army, and how does he decide who stays each time? Given what we already know about Gideon's hesitance, why do you think God insisted on doing this?
+4. Some readers sort biblical plots into a "comedy" shape (a flawed character is humbled and then rises) or a "tragedy" shape (a character with every advantage slowly self-destructs). Looking at the whole span of Judges 6-8, which shape fits Gideon best — and what's your evidence?
 
-5. The battle is won with trumpets, torches, and clay jars instead of weapons or superior numbers. What point do you think the author is making about where real power actually comes from?
+5. **Read Jonah 3.** (Quick recap: Jonah has run from God's call to preach against Nineveh, been thrown overboard and swallowed by a great fish, and been given a second chance.) Imagine the book ended right here — as more than one children's Bible actually does. What would the story be about, and what would you take away from it?
 
-6. **Read Judges 8.** What does Gideon say when Israel offers to make him king, and what does he do right afterward with the gold earrings they give him? What's odd about that combination?
+6. **Read Jonah 4.** What does this final chapter reveal the book was really about all along? Skim back over chapter 1 — how does Jonah's behavior there read differently now?
 
-7. Some readers describe biblical plots as following either a "comedy" arc (a character overcomes challenges and rises) or a "tragedy" arc (a character has everything going for them but self-destructs). Looking at the whole span of Judges 6-8, which arc do you think best fits Gideon, and why?
+7. Judges ends by repeating, four times, "In those days there was no king in Israel" — twice adding, "everyone did what was right in his own eyes." If Gideon is one of the *better* judges, what is the book as a whole building toward? How does that larger arc change what the Gideon story is "about"?
 
-8. This one story about Gideon sits inside the larger book of Judges, which itself sits inside the larger story of Israel repeatedly failing and needing rescue. How does seeing Gideon as one piece of that bigger, repeating pattern change what you think the story is actually about?
+8. **Read 1 Samuel 8:4-9.** The book of Judges seems to be reaching for a king — but when Israel finally demands one, God's answer to Samuel is "they have rejected me from being king over them," and he grants the request anyway. The kings that follow mostly fail, David included. So the thing Judges wants turns out to be part of the problem, not the fix. Pulling back to the whole Bible: what kind of leadership does the story actually turn out to need?
 
-9. Think of a familiar Bible story you've mostly encountered in bite-sized pieces — a sermon point, a devotional, a kids' Bible version. What might change if you read the whole surrounding narrative in one sitting instead?
+9. This week's podcast compares misreading a story to hiking toward what looks like the summit — then realizing it was a false peak on a much bigger climb. Has that happened in your own life: something you read at the time as the end of the story — a peak, or a defeat — that turned out to be the middle of something larger?
+
+10. Think of a familiar Bible story you've mostly encountered in bite-sized pieces — a sermon point, a devotional, a kids' Bible version. What might change if you read the whole surrounding narrative in one sitting instead?
