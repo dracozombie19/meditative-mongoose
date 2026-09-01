@@ -1,5 +1,8 @@
 site:
   podcast_series_url: https://bibleproject.com/podcasts/series/how-to-read-the-bible-series/
+  # Only weeks with num <= published_through are rendered into index.html.
+  # Bump this as each week's guide is reviewed. Remove it to publish all weeks.
+  published_through: 7
 weeks:
 - num: 1
   category: Orientation

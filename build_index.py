@@ -34,8 +34,13 @@ OUTPUT = REPO / "index.html"
 def render() -> str:
     config = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
 
+    site = config.get("site", {})
+    published_through = site.get("published_through")
+
     weeks = []
     for w in config["weeks"]:
+        if published_through is not None and w["num"] > published_through:
+            continue
         guide_path = REPO / w["guide"]
         if not guide_path.exists():
             sys.exit(f"weeks.yml points at a missing guide: {w['guide']}")
@@ -59,7 +64,7 @@ def render() -> str:
         keep_trailing_newline=True,
     )
     template = env.get_template("index.html.j2")
-    return template.render(site=config.get("site", {}), weeks=weeks, total=len(weeks))
+    return template.render(site=site, weeks=weeks, total=len(config["weeks"]))
 
 
 def main(argv: list[str]) -> int:
