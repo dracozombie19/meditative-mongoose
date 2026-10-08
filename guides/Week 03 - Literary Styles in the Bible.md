@@ -3,7 +3,7 @@
 
 The Bible isn't written in one uniform style — tonight we'll look at a few of the different kinds of writing it uses, and what changes once you notice which one you're in.
 
-1. When you picture "the Bible" in your mind, do you picture more story, more poetry, or more of a rulebook or instruction manual? Where do you think that impression came from?
+1. Think about how differently you read a novel, a poem, and a set of assembly instructions — you don't expect any of them to work the same way, even though they're all just words on a page. When you open the Bible, do you read it with that same shifting awareness, or more like one undifferentiated block of text?
 
 2. Narrative makes up nearly half of the Bible. Why do you think God chose to reveal so much of himself through story, rather than through straightforward teaching or a list of rules?
 
