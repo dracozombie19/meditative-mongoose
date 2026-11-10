@@ -1,4 +1,4 @@
-# Week 17: Biblical Law
+# Week 13: Biblical Law
 *How to Read the Bible — 19-Week Study*
 
 The Bible's laws can feel like a strange thing to study closely — tonight we'll look at what they were actually for.

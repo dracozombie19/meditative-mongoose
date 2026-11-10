@@ -1,4 +1,4 @@
-# Week 18: New Testament Letters (Historical Context)
+# Week 17: New Testament Letters (Historical Context)
 *How to Read the Bible — 19-Week Study*
 
 New Testament letters were written to real people in real situations — tonight we'll start looking at the history behind them.

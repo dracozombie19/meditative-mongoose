@@ -1,4 +1,4 @@
-# Week 12: Poetic Metaphor
+# Week 10: Poetic Metaphor
 *How to Read the Bible — 19-Week Study*
 
 Biblical poets return to the same handful of images again and again — tonight we'll look at a few of them and what they're doing.

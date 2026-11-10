@@ -1,4 +1,4 @@
-# Week 19: New Testament Letters (Literary Context)
+# Week 18: New Testament Letters (Literary Context)
 *How to Read the Bible — 19-Week Study*
 
 New Testament letters are carefully composed, not just casual mail — tonight we'll look at how they're actually put together.
@@ -21,4 +21,4 @@ New Testament letters are carefully composed, not just casual mail — tonight w
 
 9. Think of a piece of writing you need to do soon — an email, a hard conversation, a word of encouragement to a friend. What's the one "main idea" you'd want everything else to connect back to, the way Paul's whole letter to Ephesus connects back to his opening prayer?
 
-10. This is the last week of our 19-week study. Looking back across everything we've covered — from what the Bible even is, to how to read its different genres, all the way to these letters — what's one way your approach to reading Scripture has actually changed?
+10. These letters were meant to be read aloud in one sitting to a gathered church, not studied privately verse-by-verse. What might change if you read through an entire New Testament letter aloud, start to finish, with your own group or family — the way its first hearers would have heard it?

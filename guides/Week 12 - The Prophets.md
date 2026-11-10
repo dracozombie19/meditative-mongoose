@@ -1,4 +1,4 @@
-# Week 14: The Prophets
+# Week 12: The Prophets
 *How to Read the Bible — 19-Week Study*
 
 The prophets are some of the most misread books in the Bible — tonight we'll look at what they were actually for.

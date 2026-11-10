@@ -1,4 +1,4 @@
-# Week 13: The Book of Psalms
+# Week 11: The Book of Psalms
 *How to Read the Bible — 19-Week Study*
 
 The book of Psalms is more than a collection of individual prayers — tonight we'll spend time in a few of them and see how they fit together.

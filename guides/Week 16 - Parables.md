@@ -1,4 +1,4 @@
-# Week 10: Parables
+# Week 16: Parables
 *How to Read the Bible — 19-Week Study*
 
 Jesus taught constantly in parables — tonight we'll look at what they were actually built to do.

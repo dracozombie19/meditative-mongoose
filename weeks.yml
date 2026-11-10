@@ -134,43 +134,10 @@ weeks:
   - label: Chaotic Waters and Baptism
     url: https://bibleproject.com/podcasts/design-patterns-bible-part-4-chaotic-waters-baptism/
 - num: 9
-  category: Gospel
-  title: The Gospel
-  nav_label: The Gospel
-  guide: guides/Week 09 - The Gospel.md
-  video: https://bibleproject.com/videos/how-to-read-gospel/
-  blurb: >-
-    The word "gospel" means "good news," and in the New Testament it specifically means the announcement
-    that God's kingdom has arrived in our world through the life, death, and resurrection of Jesus. Matthew,
-    Mark, Luke, and John each tell this same essential story, but each author arranges and highlights
-    different details to bring out a different facet of who Jesus is.
-  podcasts:
-  - label: What Does the Word "Gospel" Mean?
-    url: https://bibleproject.com/podcasts/what-does-word-gospel-mean/
-  - label: The Gospel Is More Than You Think
-    url: https://bibleproject.com/podcasts/gospel-more-you-think/
-  - label: Why Are There Four Accounts of the Gospel?
-    url: https://bibleproject.com/podcasts/why-are-there-4-gospels/
-  - label: The Extravagant Claim of the Gospel
-    url: https://bibleproject.com/podcasts/obvious-extravagant-claim-gospels-gospels-e4/
-- num: 10
-  category: Gospel
-  title: Parables
-  nav_label: Parables
-  guide: guides/Week 10 - Parables.md
-  video: https://bibleproject.com/videos/how-to-read-the-bible-the-parables-of-jesus/
-  blurb: >-
-    Jesus was a master storyteller, and many of his most famous teachings come to us as short, vivid stories
-    called parables. They aren't simple moral fables meant to illustrate a lesson — they're how Jesus
-    announced that God's kingdom was breaking into the world, often in ways that confused, provoked, or
-    upended his listeners' expectations. Reading a parable well means asking who's listening, what assumption
-    is being challenged, and what decision the story is pushing you toward.
-  podcasts: []
-- num: 11
   category: Poetry
   title: The Art of Biblical Poetry
   nav_label: Biblical Poetry
-  guide: guides/Week 11 - The Art of Biblical Poetry.md
+  guide: guides/Week 09 - The Art of Biblical Poetry.md
   video: https://bibleproject.com/videos/art-biblical-poetry/
   blurb: >-
     Roughly a third of the Bible is poetry, and it works differently than narrative. Instead of moving
@@ -183,11 +150,11 @@ weeks:
     url: https://bibleproject.com/podcasts/series-h2r-p17-poetry-e1-thunder-god/
   - label: God Speaks in Poetry
     url: https://bibleproject.com/podcasts/series-h2r-p18-poetry-e2-god-speaks-poetry/
-- num: 12
+- num: 10
   category: Poetry
   title: Poetic Metaphor
   nav_label: Poetic Metaphor
-  guide: guides/Week 12 - Poetic Metaphor.md
+  guide: guides/Week 10 - Poetic Metaphor.md
   video: https://bibleproject.com/videos/metaphor-biblical-poetry/
   blurb: >-
     Metaphor isn't just decoration in language — it's the basic way humans make sense of the world. Biblical
@@ -202,11 +169,11 @@ weeks:
     url: https://bibleproject.com/podcasts/series-h2r-p20-metaphor-e2-mountain-garden-human-ideal/
   - label: Chaotic Waters
     url: https://bibleproject.com/podcasts/series-h2r-p21-metaphor-e3-chaotic-waters/
-- num: 13
+- num: 11
   category: Poetry
   title: The Book of Psalms
   nav_label: Book of Psalms
-  guide: guides/Week 13 - The Book of Psalms.md
+  guide: guides/Week 11 - The Book of Psalms.md
   video: https://bibleproject.com/videos/book-of-psalms/
   blurb: >-
     The book of Psalms is the largest collection of poetry in the Bible, but it isn't a random anthology
@@ -215,11 +182,11 @@ weeks:
     of lament tied to David's story and Israel's exile, and closes with an unrestrained five-poem burst
     of praise — functioning as a kind of portable temple people could carry with them wherever they were.
   podcasts: []
-- num: 14
+- num: 12
   category: Prophecy
   title: The Prophets
   nav_label: The Prophets
-  guide: guides/Week 14 - The Prophets.md
+  guide: guides/Week 12 - The Prophets.md
   video: https://bibleproject.com/videos/the-prophets/
   blurb: >-
     The Old Testament prophets are often remembered as fortune-tellers, but that's not really what a "prophet"
@@ -233,11 +200,34 @@ weeks:
     url: https://bibleproject.com/podcasts/what-prophecy/
   - label: Prophets as Provokers
     url: https://bibleproject.com/podcasts/prophets-provokers/
-- num: 15
+- num: 13
+  category: Law
+  title: Biblical Law
+  nav_label: Biblical Law
+  guide: guides/Week 13 - Biblical Law.md
+  video: https://bibleproject.com/videos/reading-biblical-law/
+  blurb: >-
+    The first books of the Bible contain more than 600 laws, and it's easy to either skip past them or
+    read them as a strict behavior manual. But in the story of the Bible, the law isn't a divine checklist
+    handed down from nowhere — it's the terms of a covenant relationship, given to a people God had already
+    rescued. Israel is called to be a "kingdom of priests," and the laws are meant to spell out what a
+    nation living in relationship with God could actually look like.
+  podcasts:
+  - label: The Purpose of the Law
+    url: https://bibleproject.com/podcasts/purpose-law/
+  - label: The Law as a Covenantal Partnership
+    url: https://bibleproject.com/podcasts/law-covenantal-partnership/
+  - label: God's Wisdom in the Law
+    url: https://bibleproject.com/podcasts/gods-wisdom-law/
+  - label: The Law as a Revolution
+    url: https://bibleproject.com/podcasts/law-revolution/
+  - label: Jesus Fulfills the Law
+    url: https://bibleproject.com/podcasts/jesus-fulfills-law/
+- num: 14
   category: Wisdom
   title: The Books of Solomon
   nav_label: Books of Solomon
-  guide: guides/Week 15 - The Books of Solomon.md
+  guide: guides/Week 14 - The Books of Solomon.md
   video: https://bibleproject.com/videos/books-solomon/
   blurb: >-
     Three books in the Bible are connected to King Solomon: Proverbs, Ecclesiastes, and Song of Songs.
@@ -257,47 +247,44 @@ weeks:
     url: https://bibleproject.com/podcasts/song-songs-semi-erotic-love-poetry/
   - label: Solomon the Cynic (Ecclesiastes)
     url: https://bibleproject.com/podcasts/solomon-cynic-job-you-never-knew/
-- num: 16
-  category: Apocalyptic
-  title: Apocalyptic Literature
-  nav_label: Apocalyptic Lit.
-  guide: guides/Week 16 - Apocalyptic Literature.md
-  video: https://bibleproject.com/videos/apocalyptic-literature/
+- num: 15
+  category: Gospel
+  title: The Gospel
+  nav_label: The Gospel
+  guide: guides/Week 15 - The Gospel.md
+  video: https://bibleproject.com/videos/how-to-read-gospel/
   blurb: >-
-    "Apocalypse" doesn't mean the end of the world — it's a Greek word that means "to uncover" or "reveal."
-    In the Bible, an apocalypse happens when God pulls back the curtain on ordinary life and lets someone
-    see things from a heavenly vantage point, transforming how they see their circumstances. Understanding
-    it means learning to trace its imagery — the chaotic sea, wild beasts, a throne room in the heavens
-    — through the whole story of the Bible, rather than treating it as a private code to crack.
+    The word "gospel" means "good news," and in the New Testament it specifically means the announcement
+    that God's kingdom has arrived in our world through the life, death, and resurrection of Jesus. Matthew,
+    Mark, Luke, and John each tell this same essential story, but each author arranges and highlights
+    different details to bring out a different facet of who Jesus is.
+  podcasts:
+  - label: What Does the Word "Gospel" Mean?
+    url: https://bibleproject.com/podcasts/what-does-word-gospel-mean/
+  - label: The Gospel Is More Than You Think
+    url: https://bibleproject.com/podcasts/gospel-more-you-think/
+  - label: Why Are There Four Accounts of the Gospel?
+    url: https://bibleproject.com/podcasts/why-are-there-4-gospels/
+  - label: The Extravagant Claim of the Gospel
+    url: https://bibleproject.com/podcasts/obvious-extravagant-claim-gospels-gospels-e4/
+- num: 16
+  category: Gospel
+  title: Parables
+  nav_label: Parables
+  guide: guides/Week 16 - Parables.md
+  video: https://bibleproject.com/videos/how-to-read-the-bible-the-parables-of-jesus/
+  blurb: >-
+    Jesus was a master storyteller, and many of his most famous teachings come to us as short, vivid stories
+    called parables. They aren't simple moral fables meant to illustrate a lesson — they're how Jesus
+    announced that God's kingdom was breaking into the world, often in ways that confused, provoked, or
+    upended his listeners' expectations. Reading a parable well means asking who's listening, what assumption
+    is being challenged, and what decision the story is pushing you toward.
   podcasts: []
 - num: 17
-  category: Law
-  title: Biblical Law
-  nav_label: Biblical Law
-  guide: guides/Week 17 - Biblical Law.md
-  video: https://bibleproject.com/videos/reading-biblical-law/
-  blurb: >-
-    The first books of the Bible contain more than 600 laws, and it's easy to either skip past them or
-    read them as a strict behavior manual. But in the story of the Bible, the law isn't a divine checklist
-    handed down from nowhere — it's the terms of a covenant relationship, given to a people God had already
-    rescued. Israel is called to be a "kingdom of priests," and the laws are meant to spell out what a
-    nation living in relationship with God could actually look like.
-  podcasts:
-  - label: The Purpose of the Law
-    url: https://bibleproject.com/podcasts/purpose-law/
-  - label: The Law as a Covenantal Partnership
-    url: https://bibleproject.com/podcasts/law-covenantal-partnership/
-  - label: God's Wisdom in the Law
-    url: https://bibleproject.com/podcasts/gods-wisdom-law/
-  - label: The Law as a Revolution
-    url: https://bibleproject.com/podcasts/law-revolution/
-  - label: Jesus Fulfills the Law
-    url: https://bibleproject.com/podcasts/jesus-fulfills-law/
-- num: 18
   category: Letters
   title: 'New Testament Letters: Historical Context'
   nav_label: 'NT Letters: History'
-  guide: guides/Week 18 - New Testament Letters (Historical Context).md
+  guide: guides/Week 17 - New Testament Letters (Historical Context).md
   video: https://bibleproject.com/videos/new-testament-letters-epistles-historical-context/
   blurb: >-
     The New Testament letters weren't written as timeless essays on theology — they're real letters from
@@ -307,11 +294,11 @@ weeks:
     place. These letters also landed in the honor-and-status world of the Roman Empire — a value system
     the gospel kept turning upside down.
   podcasts: []
-- num: 19
+- num: 18
   category: Letters
   title: 'New Testament Letters: Literary Context'
   nav_label: 'NT Letters: Craft'
-  guide: guides/Week 19 - New Testament Letters (Literary Context).md
+  guide: guides/Week 18 - New Testament Letters (Literary Context).md
   video: https://bibleproject.com/videos/new-testament-letters-literary-context/
   blurb: >-
     Paul's letters weren't dashed off in one sitting — they were carefully composed over weeks, often
@@ -320,4 +307,17 @@ weeks:
     the main body of the argument, and a closing. Because these letters were meant to be heard as a single,
     coherent whole, their authors used repeated words and transition phrases to signal how one idea built
     on the next.
+  podcasts: []
+- num: 19
+  category: Apocalyptic
+  title: Apocalyptic Literature
+  nav_label: Apocalyptic Lit.
+  guide: guides/Week 19 - Apocalyptic Literature.md
+  video: https://bibleproject.com/videos/apocalyptic-literature/
+  blurb: >-
+    "Apocalypse" doesn't mean the end of the world — it's a Greek word that means "to uncover" or "reveal."
+    In the Bible, an apocalypse happens when God pulls back the curtain on ordinary life and lets someone
+    see things from a heavenly vantage point, transforming how they see their circumstances. Understanding
+    it means learning to trace its imagery — the chaotic sea, wild beasts, a throne room in the heavens
+    — through the whole story of the Bible, rather than treating it as a private code to crack.
   podcasts: []

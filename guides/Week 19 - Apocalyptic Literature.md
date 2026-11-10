@@ -1,4 +1,4 @@
-# Week 16: Apocalyptic Literature
+# Week 19: Apocalyptic Literature
 *How to Read the Bible — 19-Week Study*
 
 "Apocalyptic" is one of the most misunderstood words in the Bible — tonight we'll look at what it actually means.
@@ -20,3 +20,5 @@
 8. Every one of these visions was given to someone facing something hard — exile, a besieging army, a church under pressure — to let them see their situation from above. What's a hard "present moment" in your life where you could use that same kind of perspective?
 
 9. What's one piece of hope from these passages that you want to carry with you into this week?
+
+10. This is the last week of our 19-week study. Looking back across everything we've covered — from what the Bible even is, to how to read each of its different genres, all the way to this apocalyptic imagery — what's one way your approach to reading Scripture has actually changed?

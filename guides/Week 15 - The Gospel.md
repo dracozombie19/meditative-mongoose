@@ -1,4 +1,4 @@
-# Week 9: The Gospel
+# Week 15: The Gospel
 *How to Read the Bible — 19-Week Study*
 
 The Gospels tell one story four different ways — tonight we'll look at what each author is doing with it.

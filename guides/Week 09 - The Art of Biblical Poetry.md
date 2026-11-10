@@ -1,4 +1,4 @@
-# Week 11: The Art of Biblical Poetry
+# Week 9: The Art of Biblical Poetry
 *How to Read the Bible — 19-Week Study*
 
 Biblical poetry works differently than narrative — tonight we'll look at how, and why it rewards slowing down.

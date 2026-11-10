@@ -1,4 +1,4 @@
-# Week 15: The Books of Solomon
+# Week 14: The Books of Solomon
 *How to Read the Bible — 19-Week Study*
 
 Three books in the Bible are tied to King Solomon — tonight we'll look at Proverbs, Ecclesiastes, and Song of Songs, and how they relate to his story.
